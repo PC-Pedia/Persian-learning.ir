@@ -1,0 +1,113 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/home/bootstrap-rtl.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/ico" href="~/home/img/U.png" />
+
+    <link href="~/home/Site.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>ثیت نام یا ورود کاربر</title>
+    <style>
+        *, :after, :before {
+            box-sizing: border-box
+        }
+
+        .clearfix:after, .clearfix:before {
+            content: '';
+            display: table
+        }
+
+        .clearfix:after {
+            clear: both;
+            display: block
+        }
+
+       .a{
+            color: inherit;
+        }
+        .forminput {
+            text-align: center;
+            border-radius: 30px;
+            height: 50px
+        }
+        .pad15 {
+            direction: rtl;
+            padding-top: 15px
+        }
+    </style>
+</head>
+<body style="font-family:IRANSans;background:url(../../../wwwroot/home/img/x.jpg)">
+    <div class="login-wrap" style="font-family:IRANSans;margin-top:-10px">
+        <div class="login-html" style="direction:rtl;background: url(../../../wwwroot/home/img/Body/55.png)">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+            @Html.Label("tab-1","ورود اعضا", new { @class="tab"})
+            <input id="tab-2" type="radio" name="tab" class="sign-up">
+            @Html.Label("tab-2", "ثبت نام", new { @class = "tab" })
+            <div class="login-form">
+                    @using (Html.BeginForm("Index","Home",FormMethod.Post))
+                    {
+                        <div class="sign-in-htm">
+                            <div class="group pad15">
+                                @Html.Label("user", "نام کاربری", new { @class="lable" })
+                                @Html.TextBox("Username","", new { @class= "form-control forminput", placeholder = "نام کاربری" })
+                            </div>
+                            <div class="group pad15">
+                                @Html.Label("pass", "رمز عبور", new { @class = "lable" })
+                                @Html.Password("Password","",new { @class = "form-control forminput", placeholder = "رمز عبور" })
+                            </div>
+                            <div class="group">
+                                <input id="check" name="check" type="checkbox" class="check" checked>
+                                <label for="check"><span class="icon"></span>&nbsp;مرا به خاطر بسپار&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            </div>
+                            <div class="group">
+                                    <input type="submit" class="button" style="color:white" value="ورود" id="green">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a href="#forgot" style=""></a>
+                                @Html.ActionLink("رمز خود را فراموش کرده اید؟", "forget", null, new { @class = "a", text_decoration = "none" })
+                                @Html.ActionLink("صفحه اصلی", "Index","Home", null, new { @class = "a", text_decoration = "none" })
+                            </div>
+                        </div>
+                    }
+                    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+                    {
+                    <div class="sign-up-htm">
+                        <div>
+                            <div class="group pad15">
+                                @Html.Label("user", "نام کاربری", new { @class = "lable" })
+                                @Html.TextBox("Username", "", new { @class = "form-control forminput", placeholder = "نام کاربری" })
+                            </div>
+                            <div class="group pad15">
+                                @Html.Label("pass", "رمز عبور", new { @class = "lable" })
+                                @Html.Password("Password", "", new { @class = "form-control forminput", placeholder = "رمز عبور" })
+                            </div>
+                            <div class="group pad15">
+                                @Html.Label("pass", "تکرار رمز ", new { @class = "lable" })
+                                @Html.Password("Confrimpassword", "", new { @class = "form-control forminput", placeholder = "تکرار رمز" })
+                            </div>
+                            <div class="group">
+                                @Html.Label("Email", "ایمیل ", new { @class = "lable" })
+                                <input id="pass" name="Gmail" type="email" class="form-control forminput" placeholder=" ایمیل" />
+                            </div>
+                            <br />
+                            <div class="group">
+                                  <input type="submit" class="button clc" style="color:white" value="ثبت نام" id="green">
+                            </div>
+                            <div class="hr"></div>
+                        </div>
+                    </div>
+                    }
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Bussines\bin\Debug\netcoreapp2.1\Bussines.deps.json
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Bussines\bin\Debug\netcoreapp2.1\Bussines.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Bussines\bin\Debug\netcoreapp2.1\Bussines.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.csproj.CoreCompileInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.AssemblyInfoInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.AssemblyInfo.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.csprojAssemblyReference.cache
+E:\Persian_Learning\Bussines\bin\Debug\netcoreapp2.1\Bussines.deps.json
+E:\Persian_Learning\Bussines\bin\Debug\netcoreapp2.1\Bussines.dll
+E:\Persian_Learning\Bussines\bin\Debug\netcoreapp2.1\Bussines.pdb
+E:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.csprojAssemblyReference.cache
+E:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.csproj.CoreCompileInputs.cache
+E:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.AssemblyInfoInputs.cache
+E:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.AssemblyInfo.cs
+E:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.dll
+E:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.pdb
+D:\Persian_Learning\Bussines\bin\Debug\netcoreapp2.1\Bussines.deps.json
+D:\Persian_Learning\Bussines\bin\Debug\netcoreapp2.1\Bussines.dll
+D:\Persian_Learning\Bussines\bin\Debug\netcoreapp2.1\Bussines.pdb
+D:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.csprojAssemblyReference.cache
+D:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.csproj.CoreCompileInputs.cache
+D:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.AssemblyInfoInputs.cache
+D:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.AssemblyInfo.cs
+D:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.dll
+D:\Persian_Learning\Bussines\obj\Debug\netcoreapp2.1\Bussines.pdb

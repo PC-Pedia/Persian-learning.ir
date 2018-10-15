@@ -1,0 +1,983 @@
+﻿.a:hover {
+    text-decoration: none
+}
+.navbar.navbar-default {
+    direction: rtl;
+    border: 0;
+    border-radius: 5px;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    width: 200px;
+}
+
+.mega-dropdown {
+    position: static !important;
+}
+
+.mega-dropdown-menu {
+    padding: 20px 0px;
+    width: 100%;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+    .mega-dropdown-menu:before {
+        content: "";
+        border-bottom: 15px solid #fff;
+        border-right: 17px solid transparent;
+        border-left: 17px solid transparent;
+        position: absolute;
+        top: -15px;
+        left: 285px;
+        z-index: 10;
+    }
+
+    .mega-dropdown-menu:after {
+        content: "";
+        border-bottom: 17px solid #ccc;
+        border-right: 19px solid transparent;
+        border-left: 19px solid transparent;
+        position: absolute;
+        top: -17px;
+        left: 283px;
+        z-index: 8;
+    }
+
+    .mega-dropdown-menu > li > ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        .mega-dropdown-menu > li > ul > li {
+            list-style: circle;
+        }
+
+            .mega-dropdown-menu > li > ul > li > a {
+                display: block;
+                padding: 3px 20px;
+                clear: both;
+                font-weight: normal;
+                line-height: 1.428571429;
+                color: black;
+                white-space: normal;
+            }
+
+    .mega-dropdown-menu > li ul > li > a:hover,
+    .mega-dropdown-menu > li ul > li > a:focus {
+        text-decoration: none;
+        color: white;
+        background-color: deepskyblue;
+        border-radius: 10px
+    }
+
+    .mega-dropdown-menu .dropdown-header {
+        color: blue;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .mega-dropdown-menu form {
+        margin: 3px 20px;
+    }
+
+    .mega-dropdown-menu .form-group {
+        margin-bottom: 3px;
+    }
+
+.dropdown.mega-dropdown:hover > .dropdown-menu.mega-dropdown-menu.row {
+    display: block;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+    .navbar-default .navbar-nav > li > a:hover {
+        color: white;
+        font-size: 13px;
+        transition: outline 0.1s ease-in-out;
+        border-bottom: 2px solid deepskyblue
+    }
+.dropdown-menu.mega-dropdown-menu.row li:hover {
+    background: #fff;
+}
+
+.megamenu-headline {
+    padding: 0 32px;
+}
+
+#i {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s, transform 1s;
+}
+
+    #i:hover {
+        -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+        transform: rotate(360deg);
+    }
+
+#das:hover {
+    background-color: deepskyblue;
+    color: white;
+}
+
+#das {
+    box-shadow: 2px 4px 2px 2px gray
+}
+
+#ali:hover {
+    color: deepskyblue;
+    text-decoration: none
+}
+/*
+    1. SLIDER AREA
+*/ /*
+    2. FUN FACT AREA
+*/
+.fun-fact-area .area-bg {
+    background: rgba(0, 0, 0, 0) url("img/Body/r.png") no-repeat scroll center center / cover;
+}
+
+    .fun-fact-area .area-bg::after {
+        background: #000000 none repeat scroll 0 0;
+        opacity: 0.6;
+    }
+
+/*
+    4. COURSE AERA
+*/
+
+.single-course {
+    border-radius: 10px;
+    -webkit-box-shadow: 0 7px 7px #c7c7c7;
+    box-shadow: 0 7px 7px #c7c7c7;
+    overflow: hidden;
+}
+
+
+a.enroll-button {
+    background: white none repeat scroll 0 0;
+    border-radius: 50px;
+    color: deepskyblue;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    border: 1px solid deepskyblue;
+}
+
+    a.enroll-button:hover {
+        background: deepskyblue none repeat scroll 0 0;
+        color: #ffffff;
+    }
+
+.main-button.icon-button:hover, .main-button.icon-button:focus {
+    padding-right: 35px;
+}
+
+.main-button.icon-button:after {
+    content: "\f178";
+    font-family: FontAwesome;
+    position: absolute;
+    width: 30px;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.main-button.icon-button:hover:after, .main-button.icon-button:focus:after {
+    opacity: 1;
+}
+
+.course-price {
+    color: deepskyblue;
+    float: right;
+    font-size: 13px;
+}
+
+.row.course-list {
+    margin: 0;
+}
+
+    .row.course-list .col-lg-3 {
+        width: 100%;
+        padding: 0;
+    }
+
+.course-details {
+    text-align: left;
+}
+
+.author-img {
+    border-radius: 50%;
+    height: 80px;
+    overflow: hidden;
+    width: 80px;
+}
+/*
+    log in page
+*/
+
+.login-wrap {
+    width: 100%;
+    margin: auto;
+    max-width: 525px;
+    min-height: 670px;
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.login-html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 55px 70px 50px 70px;
+}
+
+    .login-html .sign-in-htm,
+    .login-html .sign-up-htm {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        transition: all .4s linear;
+    }
+
+    .login-html .sign-in,
+    .login-html .sign-up,
+    .login-form .group .check {
+        display: none;
+    }
+
+    .login-html .tab,
+    .login-form .group .label,
+    .login-form .group .button {
+        text-transform: uppercase;
+    }
+
+    .login-html .tab {
+        font-size: 22px;
+        margin-right: 15px;
+        padding-bottom: 5px;
+        margin: 0 15px 10px 0;
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+    }
+
+    .login-html .sign-in:checked + .tab,
+    .login-html .sign-up:checked + .tab {
+        color: deepskyblue;
+        border-color: #1161ee;
+    }
+
+.login-form {
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+    .login-form .group {
+        margin-bottom: 15px;
+    }
+
+        .login-form .group .label,
+        .login-form .group .input,
+        .login-form .group .button {
+            width: 100%;
+            color: black;
+            display: block;
+        }
+
+        .login-form .group .input,
+        .login-form .group .button {
+            border: none;
+            padding: 15px 20px;
+            border-radius: 25px;
+            background: rgba(255,255,255,.1);
+        }
+
+        .login-form .group input[data-type="password"] {
+            text-security: circle;
+            -webkit-text-security: circle;
+        }
+
+        .login-form .group .label {
+            color: #000;
+            font-size: 12px;
+        }
+
+        .login-form .group .button {
+            background: deepskyblue;
+        }
+
+        .login-form .group label .icon {
+            width: 15px;
+            height: 15px;
+            border-radius: 2px;
+            position: relative;
+            display: inline-block;
+            background: rgba(255,255,255,.1);
+        }
+
+            .login-form .group label .icon:before,
+            .login-form .group label .icon:after {
+                content: '';
+                width: 10px;
+                height: 2px;
+                background: #fff;
+                position: absolute;
+                transition: all .2s ease-in-out 0s;
+            }
+
+            .login-form .group label .icon:before {
+                left: 3px;
+                width: 5px;
+                bottom: 6px;
+                transform: scale(0) rotate(0);
+            }
+
+            .login-form .group label .icon:after {
+                top: 6px;
+                right: 0;
+                transform: scale(0) rotate(0);
+            }
+
+        .login-form .group .check:checked + label {
+            color: #000;
+        }
+
+            .login-form .group .check:checked + label .icon {
+                background: #1161ee;
+            }
+
+                .login-form .group .check:checked + label .icon:before {
+                    transform: scale(1) rotate(45deg);
+                }
+
+                .login-form .group .check:checked + label .icon:after {
+                    transform: scale(1) rotate(-45deg);
+                }
+
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm {
+    transform: rotate(0);
+}
+
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+    transform: rotate(0);
+}
+
+.hr {
+    margin: 30px 0 50px 0;
+}
+
+.foot-lnk {
+    text-align: center;
+}
+
+#green:hover {
+    background-color: aquamarine
+}
+
+#green {
+    outline: none
+}
+
+.single-blog-item {
+    border-radius: 10px;
+    -webkit-box-shadow: 0 7px 7px #c7c7c7;
+    box-shadow: 0 7px 7px #c7c7c7;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.blog-thumb {
+    overflow: hidden;
+}
+
+    .blog-thumb img {
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+.single-blog:hover {
+    -webkit-box-shadow: 0 0 20px #ddd;
+    box-shadow: 0 0 20px #ddd;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.blog-details h3 {
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.blog-meta a {
+    opacity: .7;
+    margin-right: 15px;
+}
+
+    .blog-meta a:hover {
+        opacity: 1;
+    }
+
+.blog-details a.readmore {
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.single-blog-item:hover .blog-thumb img {
+    opacity: 0.5;
+    -webkit-transform: scale(1.3) rotate(10deg);
+    transform: scale(1.3) rotate(10deg);
+}
+
+.search-wrapper {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 25px;
+}
+
+    .search-wrapper.active {
+    }
+
+    .search-wrapper .input-holder {
+        overflow: hidden;
+        height: 40px;
+        background: none;
+        color: deepskyblue;
+        border-radius: 6px;
+        position: relative;
+        width: 40px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .search-wrapper.active .input-holder {
+        border-radius: 50px;
+        width: 250px;
+        margin-left: -235px;
+        background: deepskyblue;
+        -webkit-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+        -moz-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+        transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    }
+
+    .search-wrapper .input-holder .search-input {
+        width: 80%;
+        height: 50px;
+        padding: 0px 40px 30px 20px;
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: transparent;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 20px;
+        color: black;
+        -webkit-transform: translate(0, 60px);
+        -moz-transform: translate(0, 60px);
+        transform: translate(0, 60px);
+        -webkit-transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+        -moz-transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+        transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+        -webkit-transition-delay: 0.3s;
+        -moz-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+    }
+
+    .search-wrapper.active .input-holder .search-input {
+        opacity: 1;
+        -webkit-transform: translate(0, 10px);
+        -moz-transform: translate(0, 10px);
+        transform: translate(0, 10px);
+    }
+
+    .search-wrapper .input-holder .search-icon {
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 6px;
+        background: #FFF;
+        padding-bottom: 10px;
+        outline: none;
+        position: relative;
+        z-index: 2;
+        float: right;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .search-wrapper.active .input-holder .search-icon {
+        width: 30px;
+        height: 30px;
+        margin-top: 7px;
+        margin-right: 7px;
+        border-radius: 30px;
+    }
+
+@media screen and (max-width: 560px) {
+    .search-wrapper.active .input-holder {
+        width: 200px;
+    }
+}
+
+/*modares*/
+
+
+
+.bt {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+    .bt:hover {
+        cursor: pointer;
+    }
+
+
+/*---------------------------------------------*/
+.wrap-input100 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.input100 {
+    font-family: IRANSans;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 68px;
+    outline: none;
+    border: none;
+}
+
+
+/*------------------------------------------------------------------
+[ Focus ]*/
+.focus-input100 {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: #15daf6;
+}
+
+.input100:focus + .focus-input100 {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+    to {
+        box-shadow: 0px 0px 70px 25px;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-shadow {
+    to {
+        box-shadow: 0px 0px 70px 25px;
+        opacity: 0;
+    }
+}
+
+
+
+.input100:focus + .focus-input100 + .symbol-input100 {
+    color: #57b846;
+    padding-left: 28px;
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login100-form-btn {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: deepskyblue;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+    .login100-form-btn:hover {
+        background: #0ef7a9;
+    }
+/*htmlpage*/
+.imgsari {
+    width: 95px;
+    padding-bottom: 5px
+}
+
+    .imgsari:hover {
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+.number {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: deepskyblue;
+    padding: 10px;
+    margin-right: -12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white
+}
+
+.fasl {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 50px;
+    border-radius: 35px;
+    padding: 15px;
+    margin-bottom: 8px
+}
+
+.ghimat {
+    font-size: 16px;
+    padding-left: 20px;
+    float: left;
+    color: limegreen
+}
+#f:hover {
+    box-shadow: inset 0 50px 0 0 blue;
+    color: #fff;
+    border-color: blue
+}
+
+#in:hover {
+    box-shadow: inset 0 50px 0 0 deeppink;
+    color: #fff;
+    border-color: deeppink
+}
+
+#t:hover {
+    box-shadow: inset 0 50px 0 0 dodgerblue;
+    color: #fff;
+    border-color: dodgerblue
+}
+
+#tt:hover {
+    box-shadow: inset 0 50px 0 0 deepskyblue;
+    color: #fff;
+    border-color: deepskyblue
+}
+/*like*/
+      svg {
+          cursor: pointer;
+          overflow: visible;
+          width: 60px;
+      }
+
+          svg #heart {
+              transform-origin: center;
+              animation: animateHeartOut .3s linear forwards;
+          }
+
+          svg #main-circ {
+              transform-origin: 29.5px 29.5px;
+          }
+
+      #checkbox {
+          display: none;
+      }
+
+          #checkbox:checked + label svg #heart {
+              transform: scale(0.2);
+              fill: #E2264D;
+              animation: animateHeart .3s linear forwards .25s;
+          }
+
+          #checkbox:checked + label svg #main-circ {
+              transition: all 2s;
+              animation: animateCircle .3s linear forwards;
+              opacity: 1;
+          }
+
+          #checkbox:checked + label svg #grp1 {
+              opacity: 1;
+              transition: .1s all .3s;
+          }
+
+              #checkbox:checked + label svg #grp1 #oval1 {
+                  transform: scale(0) translate(0, -30px);
+                  transform-origin: 0 0 0;
+                  transition: .5s transform .3s;
+              }
+
+              #checkbox:checked + label svg #grp1 #oval2 {
+                  transform: scale(0) translate(10px, -50px);
+                  transform-origin: 0 0 0;
+                  transition: 1.5s transform .3s;
+              }
+
+          #checkbox:checked + label svg #grp2 {
+              opacity: 1;
+              transition: .1s all .3s;
+          }
+
+              #checkbox:checked + label svg #grp2 #oval1 {
+                  transform: scale(0) translate(30px, -15px);
+                  transform-origin: 0 0 0;
+                  transition: .5s transform .3s;
+              }
+
+              #checkbox:checked + label svg #grp2 #oval2 {
+                  transform: scale(0) translate(60px, -15px);
+                  transform-origin: 0 0 0;
+                  transition: 1.5s transform .3s;
+              }
+
+          #checkbox:checked + label svg #grp3 {
+              opacity: 1;
+              transition: .1s all .3s;
+          }
+
+              #checkbox:checked + label svg #grp3 #oval1 {
+                  transform: scale(0) translate(30px, 0px);
+                  transform-origin: 0 0 0;
+                  transition: .5s transform .3s;
+              }
+
+              #checkbox:checked + label svg #grp3 #oval2 {
+                  transform: scale(0) translate(60px, 10px);
+                  transform-origin: 0 0 0;
+                  transition: 1.5s transform .3s;
+              }
+
+          #checkbox:checked + label svg #grp4 {
+              opacity: 1;
+              transition: .1s all .3s;
+          }
+
+              #checkbox:checked + label svg #grp4 #oval1 {
+                  transform: scale(0) translate(30px, 15px);
+                  transform-origin: 0 0 0;
+                  transition: .5s transform .3s;
+              }
+
+              #checkbox:checked + label svg #grp4 #oval2 {
+                  transform: scale(0) translate(40px, 50px);
+                  transform-origin: 0 0 0;
+                  transition: 1.5s transform .3s;
+              }
+
+          #checkbox:checked + label svg #grp5 {
+              opacity: 1;
+              transition: .1s all .3s;
+          }
+
+              #checkbox:checked + label svg #grp5 #oval1 {
+                  transform: scale(0) translate(-10px, 20px);
+                  transform-origin: 0 0 0;
+                  transition: .5s transform .3s;
+              }
+
+              #checkbox:checked + label svg #grp5 #oval2 {
+                  transform: scale(0) translate(-60px, 30px);
+                  transform-origin: 0 0 0;
+                  transition: 1.5s transform .3s;
+              }
+
+          #checkbox:checked + label svg #grp6 {
+              opacity: 1;
+              transition: .1s all .3s;
+          }
+
+              #checkbox:checked + label svg #grp6 #oval1 {
+                  transform: scale(0) translate(-30px, 0px);
+                  transform-origin: 0 0 0;
+                  transition: .5s transform .3s;
+              }
+
+              #checkbox:checked + label svg #grp6 #oval2 {
+                  transform: scale(0) translate(-60px, -5px);
+                  transform-origin: 0 0 0;
+                  transition: 1.5s transform .3s;
+              }
+
+          #checkbox:checked + label svg #grp7 {
+              opacity: 1;
+              transition: .1s all .3s;
+          }
+
+              #checkbox:checked + label svg #grp7 #oval1 {
+                  transform: scale(0) translate(-30px, -15px);
+                  transform-origin: 0 0 0;
+                  transition: .5s transform .3s;
+              }
+
+              #checkbox:checked + label svg #grp7 #oval2 {
+                  transform: scale(0) translate(-55px, -30px);
+                  transform-origin: 0 0 0;
+                  transition: 1.5s transform .3s;
+              }
+
+          #checkbox:checked + label svg #grp2 {
+              opacity: 1;
+              transition: .1s opacity .3s;
+          }
+
+          #checkbox:checked + label svg #grp3 {
+              opacity: 1;
+              transition: .1s opacity .3s;
+          }
+
+          #checkbox:checked + label svg #grp4 {
+              opacity: 1;
+              transition: .1s opacity .3s;
+          }
+
+          #checkbox:checked + label svg #grp5 {
+              opacity: 1;
+              transition: .1s opacity .3s;
+          }
+
+          #checkbox:checked + label svg #grp6 {
+              opacity: 1;
+              transition: .1s opacity .3s;
+          }
+
+          #checkbox:checked + label svg #grp7 {
+              opacity: 1;
+              transition: .1s opacity .3s;
+          }
+
+      @keyframes animateCircle {
+          40% {
+              transform: scale(10);
+              opacity: 1;
+              fill: #DD4688;
+          }
+
+          55% {
+              transform: scale(11);
+              opacity: 1;
+              fill: #D46ABF;
+          }
+
+          65% {
+              transform: scale(12);
+              opacity: 1;
+              fill: #CC8EF5;
+          }
+
+          75% {
+              transform: scale(13);
+              opacity: 1;
+              fill: transparent;
+              stroke: #CC8EF5;
+              stroke-width: .5;
+          }
+
+          85% {
+              transform: scale(17);
+              opacity: 1;
+              fill: transparent;
+              stroke: #CC8EF5;
+              stroke-width: .2;
+          }
+
+          95% {
+              transform: scale(18);
+              opacity: 1;
+              fill: transparent;
+              stroke: #CC8EF5;
+              stroke-width: .1;
+          }
+
+          100% {
+              transform: scale(19);
+              opacity: 1;
+              fill: transparent;
+              stroke: #CC8EF5;
+              stroke-width: 0;
+          }
+      }
+
+      @keyframes animateHeart {
+          0% {
+              transform: scale(0.2);
+          }
+
+          40% {
+              transform: scale(1.2);
+          }
+
+          100% {
+              transform: scale(1);
+          }
+      }
+
+      @keyframes animateHeartOut {
+          0% {
+              transform: scale(1.4);
+          }
+
+          100% {
+              transform: scale(1);
+          }
+      }

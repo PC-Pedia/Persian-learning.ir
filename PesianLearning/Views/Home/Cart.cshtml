@@ -1,0 +1,303 @@
+﻿
+@{
+    ViewBag.Title = "Cart";
+}
+<style>
+    .btn-custom-3 {
+        color: #fff;
+        background-color: deepskyblue;
+        border-radius: 18PX;
+        padding: 10px 29px;
+        text-transform: uppercase;
+        border: 1px solid deepskyblue;
+        font-size: 11px !important;
+    }
+
+        .btn-custom-3:hover {
+            background: #fff;
+            color: deepskyblue !important;
+            border: 1px solid deepskyblue;
+            border-radius: 18PX;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+        }
+
+
+
+    .t1:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+    }
+
+    .t1 th, .t1 td {
+        border: 1px solid #72af50 !important
+    }
+    .shopingCart {
+    }
+
+    .tableStyle {
+        width: 100%;
+        text-align: center;
+    }
+
+        .tableStyle thead {
+            background: #f7f9fa !important;
+        }
+
+        .tableStyle th {
+            color: #6b6666 !important;
+            padding: 10px;
+            border: 1px solid #f0f1f2 !important;
+        }
+
+        .tableStyle td {
+            color: #707070;
+            font-size: 15px;
+            padding: 10px;
+            vertical-align: top;
+            border: 1px solid #f0f1f2 !important;
+        }
+
+            .tableStyle td .a1 {
+                color: #707070;
+            }
+
+                .tableStyle td .a1:hover {
+                    color: #ff0060
+                }
+
+            .tableStyle td i {
+                font-size: 25px;
+                color: #4b4b4b;
+                margin: 0 5px;
+            }
+
+            .tableStyle td a:hover i {
+                color: #ff0060 !important;
+            }
+
+    .cart-thumb {
+        width: 114px;
+        height: 124px;
+        overflow: hidden;
+        background: #ebebeb;
+    }
+
+        .cart-thumb img {
+            width: 100%;
+            height: auto;
+        }
+
+    .tableStyle .productQuantity {
+    }
+
+    .tableStyle .itemLogo {
+        margin: 5px 0 0 0;
+    }
+
+    .tableStyle td .itemLogo i {
+        margin: 0 5px;
+        font-size: 15px;
+        color: #707070;
+    }
+
+    .tableStyle .bg_dfdfdf {
+        color: #777777;
+        margin: 0;
+    }
+
+    .tableStyle .btn.cart-btn:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .myTable {
+        margin-bottom: 25px;
+    }
+
+    .cartTotle .itemLogo img {
+        margin: 0 10px;
+    }
+
+    .coupanBox td p {
+        padding-top: 10px;
+    }
+
+
+</style>
+<div class="innerHeading bg_f1f1f1 innerHeading-border stripeM" style="font-family:IRANSans;direction:rtl;">
+    <div class="container text-center">
+        <h2 class="marginBottomNone">سبد خرید</h2>
+
+    </div>
+</div><!-- ( INNER HEADING END ) -->
+
+
+    <div id="content" class="productPage" style="font-family:IRANSans;direction:rtl;">
+        <div class="container">
+            <div class="stripe stripeM">
+                <div class="shopingCart">
+                    <br /><br />
+                    <h4 style="color:deepskyblue">   *  سبد خرید شما در مانتو فلورا</h4>
+                    <p style="font-size:7pt;">افزودن کالاها به سبد خرید به معنی رزرو کالا برای شما نیست. برای ثبت سفارش باید مراحل بعدی خرید را تکمیل نمایید.</p>
+                    <br /><br /><br />  <div class="myTable">
+                        <table class="tableStyle">
+                            <thead>
+                                <tr>
+                                    <th class="product-count text-center" style="font-size:9pt!important">ردیف</th>
+                                    <th class="product-thumbnail text-center" style="font-size:9pt!important">عکس محصول</th>
+                                    <th class="product-name text-center" style="font-size:9pt!important">مشخصات محصول</th>
+                                    <th class="product-sku text-center" style="font-size:9pt!important"> کد محصول</th>
+                                    <th class="product-price text-center" style="font-size:9pt!important">قیمت</th>
+                                    <th class="product-quantity text-center" style="font-size:9pt!important">تعداد</th>
+                                    <th class="product-action text-center" style="font-size:9pt!important">حذف</th>
+                                </tr>
+                            </thead>
+                          
+                                <tbody class="div-class">
+                                    <tr>
+                                        <td </td>
+                                        <td>
+                                            <div class="cart-thumb">
+                                                <a href="">
+                                                    <img src="" alt="" />
+                                                </a>
+
+                                            </div>
+                                        </td>
+                                        <td class="text-right" style="font-size:8pt!important">
+                                            <a href="" class="a1"> مانتو مدل </a><br><br />رنگ : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>سایز : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br>مهلت بازگشت تا 24 ساعت<br>
+                                            <p class="item.MantoLogo"><img src="" alt="" /><i class="fa fa-clock-o"></i><span style="color:#ff0060!important"></span></p>
+                                        </td>
+                                        <td style="font-size:10pt!important"><a href="" class="a1"></a></td>
+                                        <td style="font-size:10pt!important"></td>
+                                        <td>
+                                            <div class="productQuantity">
+                                                <form method="post" class="clearfix">
+                                                    <div class="sp-quantity proQunter clearfix" style="margin-left:40px!important">
+                                                        <div class="sp-minus qtyminus"><a class="qtyClick min-item" data-us="" href="#" data-multi="-1">-</a></div>
+                                                        <div class="sp-input qty">
+                                                            <input type="text" class="quntity-input" value="1" />
+                                                        </div>
+                                                        <div class="sp-plus qtyplus"><a class="qtyClick add-item" data-us="" href="#" data-multi="1">+</a></div>
+                                                    </div><!-- ( PRO QUNTER END ) -->
+                                                </form>
+                                            </div><!-- ( PRODUCT QUANTITY END ) -->
+                                        </td>
+                                        <td>
+                                            <button style="background-color:transparent" class="delete" data-us=""><i class="fa fa-remove" style="color:red!important"></i></button>
+                                            <button style="background-color:transparent" onclick="location.href="><i class="fa fa-edit" style="color:red!important"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                            
+                        </table>
+
+                        <a style="margin:15px 0" class="btn cart-btn floatLeft btn-custom-3" href="@Url.Action("sendpay")">ادامه ثبت سفارش</a>
+                    </div><!-- ( MY TABLE END ) -->
+
+                    <div class="row">
+
+
+                        <div class="col-md-6 col-sm-12">
+                            <div class="cartTotle">
+                                <p class="visible-xs">&nbsp;</p>
+                                <h4 style="color:deepskyblue">جمع کل خرید شما </h4>
+                                <table class="tableStyle t1">
+
+
+
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">قیمت</td>
+                                            <td class="text-center">230/000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center" style="color:red"><strong>میانگین تخفیف</strong></td>
+                                            <td class="text-center" style="color:red">20/000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" text-center" style="background-color:#f7fff7;color:#72af50"><strong> مبلغ قابل پرداخت</strong></td>
+                                            <td class=" text-center" style="background-color:#f7fff7;color:#72af50">
+                                                <strong>210/000</strong>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><!-- ( CART TOTLE END ) -->
+                        <div class="col-md-6 col-sm-12">
+                            <div class="row">
+                                <p style="font-size:8pt;color:#ff758f">کالاهای موجود در سبد شما ثبت و رزرو شده اند، برای ثبت سفارش مراحل بعدی را تکمیل کنید </p>
+
+                            </div>
+                            <div class="row">
+
+
+                                <div style="float: right;
+    text-align: justify;
+    direction: rtl;
+    background-color: rgba(255, 252, 224, 0.95);
+    padding: 10px;
+    border-radius: 3px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 226, 180);
+    border-image: initial;margin-top:5px;">
+                                    <p style="font-size:9pt;padding-right:20px;">اطلاع رسانی</p>
+                                    <p style="font-size:8pt;    padding-left:20px;
+    padding-right:20px;">باتوجه به سه روش پست کالاها , فاصله زمانی تحویل کالاهای این سبد حداکثر 3 روز کاری می‌باشد.</p>
+
+                                </div>
+
+                            </div>
+
+                            <br />
+                            <br />
+
+
+                        </div>
+                    </div>
+                </div><!-- ( SHOPING CART END ) -->
+            </div><!-- ( STRIPE END ) -->
+        </div>
+
+    </div><!-- ( CONTENT END ) -->
+                                            }
+
+
+<script>
+
+
+    $(function () {
+        $(".add-item").click(function () {
+            var kid = ($(this).data("us"));
+            $.post("/home/additem", { id: kid }, function () {
+            })
+        })
+    })
+
+    $(function () {
+        $(".min-item").click(function () {
+            var kid = ($(this).data("us"));
+            $.post("/home/minitem", { id: kid }, function () {
+            })
+        })
+    })
+
+
+
+</script>
+
+<script>
+    $(function () {
+        $(".delete").click(function () {
+            var kid = ($(this).data("us"));
+            var parent = $(this).parents(".div-class");
+            $.post("/home/remove", { id: kid }, function () {
+                parent.slideUp();
+            })
+        })
+    })
+
+</script>

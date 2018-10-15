@@ -1,0 +1,27 @@
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ExtentionMethod\bin\Debug\netcoreapp2.1\ExtentionMethod.deps.json
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ExtentionMethod\bin\Debug\netcoreapp2.1\ExtentionMethod.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ExtentionMethod\bin\Debug\netcoreapp2.1\ExtentionMethod.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.csprojAssemblyReference.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.csproj.CoreCompileInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.AssemblyInfoInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.AssemblyInfo.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.pdb
+E:\Persian_Learning\ExtentionMethod\bin\Debug\netcoreapp2.1\ExtentionMethod.deps.json
+E:\Persian_Learning\ExtentionMethod\bin\Debug\netcoreapp2.1\ExtentionMethod.dll
+E:\Persian_Learning\ExtentionMethod\bin\Debug\netcoreapp2.1\ExtentionMethod.pdb
+E:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.csprojAssemblyReference.cache
+E:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.csproj.CoreCompileInputs.cache
+E:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.AssemblyInfoInputs.cache
+E:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.AssemblyInfo.cs
+E:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.dll
+E:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.pdb
+D:\Persian_Learning\ExtentionMethod\bin\Debug\netcoreapp2.1\ExtentionMethod.deps.json
+D:\Persian_Learning\ExtentionMethod\bin\Debug\netcoreapp2.1\ExtentionMethod.dll
+D:\Persian_Learning\ExtentionMethod\bin\Debug\netcoreapp2.1\ExtentionMethod.pdb
+D:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.csprojAssemblyReference.cache
+D:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.csproj.CoreCompileInputs.cache
+D:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.AssemblyInfoInputs.cache
+D:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.AssemblyInfo.cs
+D:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.dll
+D:\Persian_Learning\ExtentionMethod\obj\Debug\netcoreapp2.1\ExtentionMethod.pdb

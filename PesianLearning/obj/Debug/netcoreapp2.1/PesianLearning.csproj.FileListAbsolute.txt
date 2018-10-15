@@ -1,0 +1,254 @@
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.deps.json
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.runtimeconfig.json
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.runtimeconfig.dev.json
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.Views.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.Views.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.csprojAssemblyReference.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.csproj.CoreCompileInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorAssemblyInfo.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorAssemblyInfo.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.AssemblyInfoInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.AssemblyInfo.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.TagHelpers.input.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.TagHelpers.output.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorCoreGenerate.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorTargetAssemblyInfo.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorTargetAssemblyInfo.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.Views.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.csproj.CopyComplete
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Const.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Const.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Lockout.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWith2fa.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Bussines.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ExtentionMethod.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Models.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Repository.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ViewModel.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Bussines.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ExtentionMethod.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Models.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Repository.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ViewModel.pdb
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.csprojAssemblyReference.cache
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.csproj.CoreCompileInputs.cache
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorAssemblyInfo.cache
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorAssemblyInfo.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.AssemblyInfoInputs.cache
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.AssemblyInfo.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.dll
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.pdb
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.deps.json
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.runtimeconfig.json
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.runtimeconfig.dev.json
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.dll
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.pdb
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.Views.dll
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.Views.pdb
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Bussines.dll
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Const.dll
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ExtentionMethod.dll
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Moldels.dll
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Repository.dll
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ViewModel.dll
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Bussines.pdb
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Const.pdb
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ExtentionMethod.pdb
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Moldels.pdb
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Repository.pdb
+E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ViewModel.pdb
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.TagHelpers.input.cache
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.TagHelpers.output.cache
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorCoreGenerate.cache
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Lockout.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWith2fa.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorTargetAssemblyInfo.cache
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorTargetAssemblyInfo.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.Views.pdb
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.csproj.CopyComplete
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Cart.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Course.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\HtmlCourse.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Sheard\_SiteLayout.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\User\Login.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Dashboard\Views\Admin\Index.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Dashboard\Views\Shared\_Layout.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Dashboard\Views\_ViewStart.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.deps.json
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.runtimeconfig.json
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.runtimeconfig.dev.json
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.dll
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.pdb
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.Views.dll
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\PesianLearning.Views.pdb
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Bussines.dll
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Const.dll
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ExtentionMethod.dll
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Moldels.dll
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ViewModel.dll
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Bussines.pdb
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Const.pdb
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ExtentionMethod.pdb
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Moldels.pdb
+D:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ViewModel.pdb
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.csprojAssemblyReference.cache
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.csproj.CoreCompileInputs.cache
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorAssemblyInfo.cache
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorAssemblyInfo.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.AssemblyInfoInputs.cache
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.AssemblyInfo.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.TagHelpers.input.cache
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.TagHelpers.output.cache
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorCoreGenerate.cache
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Dashboard\Views\Admin\Index.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Dashboard\Views\Shared\_Layout.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Dashboard\Views\_ViewStart.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ExternalLogin.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Lockout.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWith2fa.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPassword.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Cart.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Course.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\HtmlCourse.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\User\Login.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorTargetAssemblyInfo.cache
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.RazorTargetAssemblyInfo.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.Views.pdb
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.csproj.CopyComplete
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.dll
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.pdb
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_SiteLayout.g.cshtml.cs
+D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs

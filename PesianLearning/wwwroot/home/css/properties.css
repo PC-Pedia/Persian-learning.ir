@@ -1,0 +1,63 @@
+﻿.properties {
+    padding-top: 94px;
+    padding-bottom: 99px;
+    background: #FFFFFF;
+}
+
+.properties_row {
+    margin-top: 60px;
+}
+
+.property {
+    width: 100%;
+    margin-bottom: 59px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+    .property:hover {
+        box-shadow: 0px 20px 20px rgba(0,0,0,0.35);
+    }
+
+.property_image {
+    width: 100%;
+}
+
+    .property_image img {
+        width: 100%;
+    }
+
+.property_body {
+    padding-top: 33px;
+    padding-bottom: 35px;
+    background: #eff2f6;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.property:hover .property_body {
+    background: #FFFFFF;
+}
+
+.property_title a {
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #252525;
+    line-height: 1.2;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+    .property_title a:hover {
+        color: #3f6fce;
+    }

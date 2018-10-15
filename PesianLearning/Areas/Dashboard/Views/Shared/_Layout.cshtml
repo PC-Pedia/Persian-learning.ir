@@ -1,0 +1,175 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="~/dashboard/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="~/dashboard/img/apple-icon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>persian learning</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-rtl.min.css">
+
+    <link href="~/dashboard/css/material-dashboard.css" rel="stylesheet" />
+    
+    <link href="~/dashboard/css/demo.css" rel="stylesheet" />
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body style="font-family:myFont">
+    <div class="wrapper">
+        <div class="sidebar" style="height:135%"  data-image="../img/wallpapers.jpg">
+            <!--
+                Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+                Tip 2: you can also add an image using data-image tag
+            -->
+
+            <div class="logo">
+                <div class="card card-profile" style="margin-top:50px">
+                    <div class="card-avatar">
+                        <a href="#pablo">
+                            <img class="img" src="~/dashboard/img/faces/marc.jpg" />
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h6 class="category text-gray">محمد مظاهری</h6>
+                        <h4 class="card-title">m.mazaheri930</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li class="@(ViewBag.title == " index" ? "active" : "" )">
+                        <a href="@Url.Action(" Index","Admin",null)">
+                            <i class="material-icons">dashboard</i>
+                            <p>پیشخوان</p>
+                        </a>
+                    </li>
+                    <li class="@(ViewBag.title == " user" ? "active" : "" )">
+                        <a href="@Url.Action(" User","Admin",null)">
+                            <i class="material-icons">person</i>
+                            <p>مدیریت کاربران</p>
+                        </a>
+                    </li>
+                    <li class="@(ViewBag.title == null ? " active" : "" )">
+                        <a href="@Url.Action(" index","option",null)">
+                            <i class="material-icons">build</i>
+                            <p>جزئیات مانتو</p>
+                        </a>
+                    </li>
+                    <li class="@(ViewBag.title == " manto" ? "active" : "" )">
+                        <a href="@Url.Action(" index","mantoes",null)">
+                            <i class="material-icons">shopping_cart</i>
+                            <p>مانتوها</p>
+                        </a>
+                    </li>
+                    <li class="@(ViewBag.title == " email" ? "active" : "" )">
+                        <a href="@Url.Action(" Email","Admin",null)">
+                            <i class="material-icons">email</i>
+                            <p>ایمیل ها</p>
+                        </a>
+                    </li>
+                    <li class="@(ViewBag.title == " comment" ? "active" : "" )">
+                        <a href="@Url.Action(" Comment","Admin",null)">
+                            <i class="material-icons">comment</i>
+                            <p>نظرات</p>
+                        </a>
+                    </li>
+                    <li class="@(ViewBag.title == " edit" ? "active" : "" )">
+                        <a href="@Url.Action(" index","editsite",null)">
+                            <i class="material-icons">edit</i>
+                            <p>ویرایش سایت</p>
+                        </a>
+                    </li>
+                    <li class="hidden-md hidden-lg">
+                        <a href="@Url.Action(" index","editsite",null)">
+                            <i class="material-icons">edit</i>
+                            <p>ویرایش سایت</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel" style="position:fixed">
+            <nav class="navbar navbar-transparent navbar-absolute">
+                <div class="container-fluid">
+                    <div class="card card-stats" style="margin-top:-5px;position:fixed;top:15px;right:10px">
+                        <div class="navbar-header card-header" data-background-color="blue" style="width: 102%;padding: 7px;margin: -17px">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar" style="width:20px"></span>
+                                <span class="icon-bar" style="width:30px"></span>
+                            </button>
+                            <button style="float:left;background-color:transparent" type="button" class="navbar-other" data-toggle="collapse" onclick="demo.showNotification('bottom','right')">
+                                <span class="hidden-lg hidden-md fa fa-ellipsis-v"></span>
+                            </button>
+                            <button style="float:left;background-color:transparent" type="button" class="navbar-toggle" data-toggle="collapse">
+                                <span class="hidden-lg hidden-md fa fa-search"></span>
+                            </button>
+                            <button style="margin-top:4%;margin-right:25%; background-color:transparent;width:auto;" type="button" class="hidden-lg hidden-md navbar-other" data-toggle="collapse">
+                                <p>Persian-learning.ir</p>
+                            </button>
+                            <a style="height:70px" class="navbar-brand hidden-sm hidden-xs" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="material-icons">notifications</i>
+                                    <span class="notification">5</span>
+                                    <p class="hidden-lg hidden-md">اعلانات</p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">محمد جان آمارت اشتباهه</a></li>
+                                    <li><a href="#">به چارت ها سر بزنید</a></li>
+                                    <li><a href="#">شما با محمد دوست شدید</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group  is-empty">
+                                <input type="text" class="form-control" placeholder="جستجو">
+                                <span class="material-input"></span>
+                            </div>
+                            <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                <i class="material-icons">search</i><div class="ripple-container"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/dashboard/js/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/dashboard/js/material.min.js" type="text/javascript"></script>
+
+    <!--<script src="js/chartist.min.js"></script>-->
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap-notify.js"></script>
+
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>-->
+
+    <script src="~/dashboard/js/material-dashboard.js"></script>
+
+    <script src="~/dashboard/js/demo.js"></script>
+
+    @RenderSection("scripts")
+
+</body>
+</html>

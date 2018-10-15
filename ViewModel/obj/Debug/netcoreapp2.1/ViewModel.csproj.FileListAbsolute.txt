@@ -1,0 +1,27 @@
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\ViewModel.deps.json
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\ViewModel.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\ViewModel.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.csprojAssemblyReference.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.AssemblyInfoInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.AssemblyInfo.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.pdb
+E:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\ViewModel.deps.json
+E:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\ViewModel.dll
+E:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\ViewModel.pdb
+E:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.csprojAssemblyReference.cache
+E:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.csproj.CoreCompileInputs.cache
+E:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.AssemblyInfoInputs.cache
+E:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.AssemblyInfo.cs
+E:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.dll
+E:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.pdb
+D:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\ViewModel.deps.json
+D:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\ViewModel.dll
+D:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\ViewModel.pdb
+D:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.csprojAssemblyReference.cache
+D:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.csproj.CoreCompileInputs.cache
+D:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.AssemblyInfoInputs.cache
+D:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.AssemblyInfo.cs
+D:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.dll
+D:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.pdb

@@ -1,0 +1,36 @@
+C:\Users\Mohamad Pc\Source\Repos\Persian-Learning\Const\bin\Debug\netcoreapp2.1\Const.deps.json
+C:\Users\Mohamad Pc\Source\Repos\Persian-Learning\Const\bin\Debug\netcoreapp2.1\Const.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian-Learning\Const\bin\Debug\netcoreapp2.1\Const.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian-Learning\Const\obj\Debug\netcoreapp2.1\Const.csprojAssemblyReference.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian-Learning\Const\obj\Debug\netcoreapp2.1\Const.csproj.CoreCompileInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian-Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfoInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian-Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfo.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian-Learning\Const\obj\Debug\netcoreapp2.1\Const.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian-Learning\Const\obj\Debug\netcoreapp2.1\Const.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.deps.json
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.pdb
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csprojAssemblyReference.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csproj.CoreCompileInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfoInputs.cache
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfo.cs
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.dll
+C:\Users\Mohamad Pc\Source\Repos\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.pdb
+E:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.deps.json
+E:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.dll
+E:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.pdb
+E:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csprojAssemblyReference.cache
+E:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csproj.CoreCompileInputs.cache
+E:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfoInputs.cache
+E:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfo.cs
+E:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.dll
+E:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.pdb
+D:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.deps.json
+D:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.dll
+D:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.pdb
+D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csprojAssemblyReference.cache
+D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csproj.CoreCompileInputs.cache
+D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfoInputs.cache
+D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfo.cs
+D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.dll
+D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.pdb

@@ -1,0 +1,351 @@
+﻿
+@{
+    ViewBag.Title = "دوره های آموزشی";
+}
+<style>
+    .post-pagination .pages {
+        display: inline-block;
+    }
+
+        .post-pagination .pages li {
+            display: inline-block;
+        }
+
+        .post-pagination .pages li {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #EBEBEB;
+            -webkit-transition: 0.2s all;
+            transition: 0.2s all;
+        }
+
+            .post-pagination .pages li a {
+                display: block;
+                -webkit-transition: 0.2s color;
+                transition: 0.2s color;
+                text-decoration: none
+            }
+
+            .post-pagination .pages li:hover, .post-pagination .pages li.active {
+                background-color: deepskyblue;
+                color: #FFF;
+            }
+
+                .post-pagination .pages li:hover a {
+                    color: #FFF;
+                }
+
+
+
+    .dropdown.style1 { /* Size and position */
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px; /* Styles */
+        background: #fff;
+        border-radius: 20px;
+        border: 1px solid rgba(0,0,0,0.15);
+        box-shadow: 0 1px 1px rgba(50,50,50,0.1);
+        cursor: pointer;
+        outline: none; /* Font settings */
+        color: #525252;
+    }
+
+        .dropdown.style1:after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            margin-top: -3px;
+            border-width: 6px 6px 0 6px;
+            border-style: solid;
+            border-color: #525252 transparent;
+        }
+
+      
+
+        .dropdown.style1.active,
+        .dropdown.style1:hover {
+            background-color: deepskyblue !important;
+            color: #fff;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+            .dropdown.style1.active:after,
+            .dropdown.style1:hover:after {
+                border-top-color: #fff;
+            }
+
+        .dropdown.style1 .dropdown:after {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 100%;
+            right: 15px;
+            border-width: 0 6px 6px 6px;
+            border-style: solid;
+            border-color: #fff transparent;
+        }
+
+        .dropdown.style1 .dropdown:before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 100%;
+            right: 13px;
+            border-width: 0 8px 8px 8px;
+            border-style: solid;
+            border-color: rgba(0,0,0,0.1) transparent;
+        }
+
+       
+    .property:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19) !important;
+        border-radius:20px;
+    }
+
+</style>
+<br /><br /><br />
+<div class="container row wow fadeInDown" style="margin-bottom:20px">
+    <div class="col-lg-2 hidden-md hidden-sm hidden-xs"></div>
+    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+        <div style="width:100%;background-color:white;border:1px solid lightgray " class="single-course">
+          <img src="~/home/img/Body/html.png" width="100%"/>
+            <div style="direction:rtl;padding:10px">
+                <h3 style="color:darkblue"> آموزش html 5 جلسه اول </h3>
+                <br />
+                <p>در این جلسه مقدمات و ملزومات طراحی سایت مورد بررسی قرار خواهد گرفت </p>
+                <br /><hr />
+                <div>
+                    <div>
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox">
+                            <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg"><g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)"><path d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" id="heart" fill="#AAB8C2" /><circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" /><g id="grp7" opacity="0" transform="translate(7 6)"><circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" /><circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" /></g><g id="grp6" opacity="0" transform="translate(0 28)"><circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" /><circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" /></g><g id="grp3" opacity="0" transform="translate(52 28)"><circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" /><circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" /></g><g id="grp2" opacity="0" transform="translate(44 6)" fill="#CC8EF5"><circle id="oval2" transform="matrix(-1 0 0 1 10 0)" cx="5" cy="6" r="2" /><circle id="oval1" transform="matrix(-1 0 0 1 4 0)" cx="2" cy="2" r="2" /></g><g id="grp5" opacity="0" transform="translate(14 50)" fill="#91D2FA"><circle id="oval1" transform="matrix(-1 0 0 1 12 0)" cx="6" cy="5" r="2" /><circle id="oval2" transform="matrix(-1 0 0 1 4 0)" cx="2" cy="2" r="2" /></g><g id="grp4" opacity="0" transform="translate(35 50)" fill="#F48EA7"><circle id="oval1" transform="matrix(-1 0 0 1 12 0)" cx="6" cy="5" r="2" /><circle id="oval2" transform="matrix(-1 0 0 1 4 0)" cx="2" cy="2" r="2" /></g><g id="grp1" opacity="0" transform="translate(24)" fill="#9FC7FA"><circle id="oval1" cx="2.5" cy="3" r="2" /><circle id="oval2" cx="7.5" cy="2" r="2" /></g></g></svg>
+                        </label>
+                        <div style="float:left;margin-top:20px">
+                            <span style="padding-left:5px">3:16:58</span>
+                            <span>
+                                <img src="~/home/img/9.png" style="padding-left:1px;opacity:0.5" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="properties" style="padding-top:94px;padding-bottom:30px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="section_title" style="direction:rtl">
+                    <h4 style="color:darkblue">دوره های آموزشی</h4>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div id="selectDropdown" class=" style1 dropdown" tabindex="1" style="float:right;text-align:right!important">
+                    <span class=" dropdown-toggle" data-toggle="dropdown">مرتب سازی بر اساس</span>
+                    <ul class="dropdown dropdown-menu" style="border-radius:7px;">
+                        <li><a href="@Url.Action("ProductGrid", "Home")" onclick="location.href='@Url.Action("ProductGrid", "Home")'" id="all">همه</a></li>
+                        <li><a href="@Url.Action("ProductGrid","Home", new { a= "Best" })" onclick="location.href='@Url.Action("ProductGrid","Home",new { a = "mahboob" })'" id="Best">کد دوره</a></li>
+                        <li><a href="@Url.Action("ProductGrid","Home", new { a = "New" })" onclick="location.href='@Url.Action("ProductGrid","Home",new { a = "jadid" })'" id="New">عنوان دوره</a></li>
+                        <li><a href="@Url.Action("ProductGrid","Home", new { a = "lowest price" })" onclick="location.href='@Url.Action("ProductGrid","Home",new { a = "lowest price" })'" id="kamtar">نوع دوره</a></li>
+                        <li><a href="@Url.Action("ProductGrid","Home", new { a = "Highest price" })" onclick="location.href='@Url.Action("ProductGrid","Home",new { a = "Highest price" })'" id="bishtar">وضعیت دوره</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row properties_row">
+
+            <!-- Property -->
+
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-4 property_col wow fadeInDown">
+                <div class="property" style="background-color:#fff!important">
+                    <div class="single-course">
+                        <div class="property_image" style="width:100%">
+                            <img src="~/home/img/Body/html.png" alt="">
+                            <div style="position:absolute;top:10px;right:20px;background:gold;color:white;padding:6px">مبتدی</div>
+                        </div>
+                        <div class="property_body text-center"  style="background-color:#fff">
+                            <div class="property_title"><a href="@Url.Action("HtmlCourse","Home",null)"> Css 3 و Html 5 آموزش  </a></div>
+                            <br />
+                            <hr style="border-top:1px solid lightgray" />
+                            <div style="float:right">
+                                <span style="padding-left:5px">3:16:58</span>
+                                <span>
+                                    <img src="~/home/img/9.png" style="padding-left:1px;opacity:0.5" />
+                                </span>
+                            </div>
+
+                            <span style="float:left">
+                                <button style="border-radius:20px;background-color:deepskyblue;border:none;outline:none;margin-left:10px;margin-top:-5px;font-size:12PX!important" class="btn btn-primary" type="button">
+                                   افزودن به سبد خرید
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-4 property_col wow fadeInDown">
+                <div class="property" style="background-color:#fff!important">
+                    <div class="single-course">
+                        <div class="property_image" style="width:100%">
+                            <img src="~/home/img/Body/html.png" alt="">
+                            <div style="position:absolute;top:10px;right:20px;background:gold;color:white;padding:6px">مبتدی</div>
+                        </div>
+                        <div class="property_body text-center" style="background-color:#fff">
+                            <div class="property_title"><a href="@Url.Action("Cart","Home",null)"> Css 3 و Html 5 آموزش  </a></div>
+                            <br />
+                            <hr style="border-top:1px solid lightgray" />
+                            <div style="float:right">
+                                <span style="padding-left:5px">3:16:58</span>
+                                <span>
+                                    <img src="~/home/img/9.png" style="padding-left:1px;opacity:0.5" />
+                                </span>
+                            </div>
+
+                            <span style="float:left">
+                                <button style="border-radius:20px;background-color:deepskyblue;border:none;outline:none;margin-left:10px;margin-top:-5px;font-size:12PX!important" class="btn btn-primary" type="button">
+                                    افزودن به سبد خرید
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-4 property_col wow fadeInDown">
+                <div class="property" style="background-color:#fff!important">
+                    <div class="single-course">
+                        <div class="property_image" style="width:100%">
+                            <img src="~/home/img/Body/html.png" alt="">
+                            <div style="position:absolute;top:10px;right:20px;background:gold;color:white;padding:6px">مبتدی</div>
+                        </div>
+                        <div class="property_body text-center" style="background-color:#fff">
+                            <div class="property_title"><a href="@Url.Action("HtmlCourse","Home",null)"> Css 3 و Html 5 آموزش  </a></div>
+                            <br />
+                            <hr style="border-top:1px solid lightgray" />
+                            <div style="float:right">
+                                <span style="padding-left:5px">3:16:58</span>
+                                <span>
+                                    <img src="~/home/img/9.png" style="padding-left:1px;opacity:0.5" />
+                                </span>
+                            </div>
+
+                            <span style="float:left">
+                                <button style="border-radius:20px;background-color:deepskyblue;border:none;outline:none;margin-left:10px;margin-top:-5px;font-size:12PX!important" class="btn btn-primary" type="button">
+                                    افزودن به سبد خرید
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-4 property_col wow fadeInDown">
+                <div class="property" style="background-color:#fff!important">
+                    <div class="single-course">
+                        <div class="property_image" style="width:100%">
+                            <img src="~/home/img/Body/html.png" alt="">
+                            <div style="position:absolute;top:10px;right:20px;background:gold;color:white;padding:6px">مبتدی</div>
+                        </div>
+                        <div class="property_body text-center" style="background-color:#fff">
+                            <div class="property_title"><a href="@Url.Action("HtmlCourse","Home",null)"> Css 3 و Html 5 آموزش  </a></div>
+                            <br />
+                            <hr style="border-top:1px solid lightgray" />
+                            <div style="float:right">
+                                <span style="padding-left:5px">3:16:58</span>
+                                <span>
+                                    <img src="~/home/img/9.png" style="padding-left:1px;opacity:0.5" />
+                                </span>
+                            </div>
+
+                            <span style="float:left">
+                                <button style="border-radius:20px;background-color:deepskyblue;border:none;outline:none;margin-left:10px;margin-top:-5px;font-size:12PX!important" class="btn btn-primary" type="button">
+                                    افزودن به سبد خرید
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-4 property_col wow fadeInDown">
+                <div class="property" style="background-color:#fff!important">
+                    <div class="single-course">
+                        <div class="property_image" style="width:100%">
+                            <img src="~/home/img/Body/html.png" alt="">
+                            <div style="position:absolute;top:10px;right:20px;background:gold;color:white;padding:6px">مبتدی</div>
+                        </div>
+                        <div class="property_body text-center" style="background-color:#fff">
+                            <div class="property_title"><a href="@Url.Action("HtmlCourse","Home",null)"> Css 3 و Html 5 آموزش  </a></div>
+                            <br />
+                            <hr style="border-top:1px solid lightgray" />
+                            <div style="float:right">
+                                <span style="padding-left:5px">3:16:58</span>
+                                <span>
+                                    <img src="~/home/img/9.png" style="padding-left:1px;opacity:0.5" />
+                                </span>
+                            </div>
+
+                            <span style="float:left">
+                                <button style="border-radius:20px;background-color:deepskyblue;border:none;outline:none;margin-left:10px;margin-top:-5px;font-size:12PX!important" class="btn btn-primary" type="button">
+                                    افزودن به سبد خرید
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-4 property_col wow fadeInDown">
+                <div class="property" style="background-color:#fff!important">
+                    <div class="single-course">
+                        <div class="property_image" style="width:100%">
+                            <img src="~/home/img/Body/html.png" alt="">
+                            <div style="position:absolute;top:10px;right:20px;background:gold;color:white;padding:6px">مبتدی</div>
+                        </div>
+                        <div class="property_body text-center" style="background-color:#fff">
+                            <div class="property_title"><a href="@Url.Action("HtmlCourse","Home",null)"> Css 3 و Html 5 آموزش  </a></div>
+                            <br />
+                            <hr style="border-top:1px solid lightgray" />
+                            <div style="float:right">
+                                <span style="padding-left:5px">3:16:58</span>
+                                <span>
+                                    <img src="~/home/img/9.png" style="padding-left:1px;opacity:0.5" />
+                                </span>
+                            </div>
+
+                            <span style="float:left">
+                                <button style="border-radius:20px;background-color:deepskyblue;border:none;outline:none;margin-left:10px;margin-top:-5px;font-size:12PX!important" class="btn btn-primary" type="button">
+                                    افزودن به سبد خرید
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12" style="text-align:center">
+            <div class="post-pagination">
+                <ul class="pages">
+                    <li class="active">1</li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

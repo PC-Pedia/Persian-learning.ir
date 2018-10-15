@@ -1,0 +1,564 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="img/apple-icon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Material Dashboard by Creative Tim</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap core CSS     -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap rtl CSS - from (http://github.com/morteza) -->
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <!--  Material Dashboard CSS    -->
+    <link href="css/material-dashboard.css" rel="stylesheet" />
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="css/demo.css" rel="stylesheet" />
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body style="font-family:myFont">
+    <div class="wrapper">
+        <div class="sidebar" data-color="purple" data-image="img/apple-icon.png">
+            <!--
+                Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+                Tip 2: you can also add an image using data-image tag
+            -->
+            <div class="logo">
+                <div class="col-md-4" style="margin-top:10px">
+                    <div class="card card-profile">
+                        <div class="card-avatar">
+                            <a href="#pablo">
+                                <img class="img" src="img/faces/marc.jpg" />
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h6 class="category text-gray">محمد مظاهری</h6>
+                            <h4 class="card-title">m.mazaheri930</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li>
+                        <a href="Index.html">
+                            <i class="material-icons">home</i>
+                            <p>خانه</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="User.html">
+                            <i class="material-icons">person</i>
+                            <p>پروفایل کاربر</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Login.html">
+                            <i class="material-icons">person_add</i>
+                            <p>ساخت حساب</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Line.html">
+                            <i class="fa fa-line-chart"></i>
+                            <p>جداول</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Chart.html">
+                            <i class="fa fa-bar-chart"></i>
+                            <p>نمودارها</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="About.html">
+                            <i class="material-icons">library_books</i>
+                            <p>درباره ما</p>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="Phone.html">
+                            <i class="material-icons">phone</i>
+                            <p>پشتیبانی</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="maps.html">
+                            <i class="material-icons">location_on</i>
+                            <p>نقشه</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="notifications.html">
+                            <i class="material-icons text-gray">notifications</i>
+                            <p>اعلانات</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel" style="position:fixed">
+            <nav class="navbar navbar-transparent navbar-absolute">
+                <div class="container-fluid">
+                    <div class="card card-stats" style="margin-top:-5px;position:fixed;top:15px;right:10px">
+                        <div class="navbar-header card-header" data-background-color="blue" style="width: 102%;padding: 7px;margin: -17px">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar" style="width:20px"></span>
+                                <span class="icon-bar" style="width:30px"></span>
+                            </button>
+                            <button style="float:left;background-color:transparent" type="button" class="navbar-other" data-toggle="collapse" onclick="demo.showNotification('bottom','right')">
+                                <span class="fa fa-ellipsis-v"></span>
+                            </button>
+                            <button style="float:left;background-color:transparent" type="button" class="navbar-toggle" data-toggle="collapse">
+                                <span class="fa fa-search"></span>
+                            </button>
+                            <button style="margin-top:4%;margin-right:25%; background-color:transparent;width:auto;" type="button" class="navbar-other" data-toggle="collapse">
+                                <p>سکه وارز</p>
+                            </button>
+                            <a class="navbar-brand" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="material-icons">notifications</i>
+                                    <span class="notification">5</span>
+                                    <p class="hidden-lg hidden-md">اعلانات</p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">محمد جان آمارت اشتباهه</a></li>
+                                    <li><a href="#">به چارت ها سر بزنید</a></li>
+                                    <li><a href="#">شما با محمد دوست شدید</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group  is-empty">
+                                <input type="text" class="form-control" placeholder="جستجو">
+                                <span class="material-input"></span>
+                            </div>
+                            <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                <i class="material-icons">search</i><div class="ripple-container"></div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="container-fluid" style="direction:rtl">
+
+
+
+
+
+                    <div class="container hidden" style="margin:-15px;padding:0;width:120%;left:-5%">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="img/slider/1.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="img/slider/2.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="img/slider/3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="img/slider/4.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="img/slider/5.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="img/slider/6.jpg" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <div class="row" style="margin:0">
+                            <div class="column">
+                                <img class="demo cursor" src="img/slider/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="  میخوای مدیر شی ؟ با ما همراه باش">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/slider/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="  پول یه شبه میخوای ؟ با ما همراه باش">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/slider/3.jpg" style="width:100%" onclick="currentSlide(3)" alt=" میخوای قیمت ارز دست باشه ؟ با ما همراه باش">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/slider/4.jpg" style="width:100%" onclick="currentSlide(4)" alt=" قیمت بروز میخوای ؟ با ما همراه باش">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/slider/5.jpg" style="width:100%" onclick="currentSlide(5)" alt=" دوست داری پولدارشی ؟ با ما همراه باش">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="img/slider/6.jpg" style="width:100%" onclick="currentSlide(6)" alt=" با ما همراه باش میخوای پول پار. کنی ؟">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="direction:rtl">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header" data-background-color="purple">
+                                    <h4 class="title">تماس با ما</h4>
+                                    <p class="category">راه های ارتباطی</p>
+                                </div>
+                                <div class="card-content">
+                                    <img src="img/slider/1.jpg" />
+                                    <p>
+                                        تلفن
+                                        021-22353386
+                                    </p><p>
+                                        پاسخگویی
+                                    </p><p>
+                                        شنبه تا چهارشنبه
+                                    </p><p>
+                                        از 9:00 تا 13:00
+                                    </p><p>
+                                        و 14:00 تا 16:30
+                                    </p><p>
+                                        به غیر از روزهای تعطیل
+                                    </p><p>
+                                        فكس
+                                        021-22353387
+
+                                        ایمیل
+                                    </p><p>
+                                        info@bama.ir
+                                    </p><p>
+                                        نشانی
+                                        تهران، سعادت آباد،
+                                        بالاتر از میدان كاج ،
+                                        خیابان ششم، پلاك 34
+                                        طبقه 3، واحد 8
+                                    </p><p>
+                                        مراجعه حضوری فقط با تعیین وقت قبلی امکان‌پذیر است.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card card-nav-tabs">
+                                <div class="card-header" data-background-color="red">
+                                    <div class="nav-tabs-navigation">
+                                        <div class="nav-tabs-wrapper">
+                                            <span class="nav-tabs-title">وظایف:</span>
+                                            <ul class="nav nav-tabs" data-tabs="tabs">
+                                                <li class="active">
+                                                    <a href="#profile" data-toggle="tab">
+                                                        <i class="material-icons">bug_report</i>
+                                                        ارورها
+                                                        <div class="ripple-container"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="profile">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes" checked>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>امضا قرار داد "چه چیزی شده است؟"</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>نوشته ای برای نمایش در جدول</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>نوشته ای برای نمایش در جدول</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>نوشته ای برای نمایش در جدول</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane" id="messages">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes" checked>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>امضا قرار داد "چه چیزی شده است؟"</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>نوشته ای برای نمایش در جدول</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>نوشته ای برای نمایش در جدول</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>نوشته ای برای نمایش در جدول</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane" id="settings">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes" checked>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>امضا قرار داد "چه چیزی شده است؟"</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>نوشته ای برای نمایش در جدول</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>نوشته ای برای نمایش در جدول</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>نوشته ای برای نمایش در جدول</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                                                                <i class="material-icons">edit</i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                <i class="material-icons">close</i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-stats" style="position: fixed;margin-bottom:0px !important;width: 100%;bottom:0px;z-index:1000;padding:0">
+        <div class="icon-bar card-header" data-background-color="blue" style="margin:0;padding:0">
+            <a href="Phone.html" style="padding:0;background-color:black"><i class="fa fa-phone"></i></a>
+            <a href="Chart.html" style="padding:0;"><i class="fa fa-bar-chart"></i></a>
+            <a href="index.html" style="padding:0;"><i class="fa fa-home"></i></a>
+            <a href="Line.html" style="padding:0;"><i class="fa fa-line-chart"></i></a>
+            <a href="User.html" style="padding:0;"><i class="fa fa-user"></i></a>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/material.min.js" type="text/javascript"></script>
+    <!--  Charts Plugin -->
+    <script src="js/chartist.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="js/bootstrap-notify.js"></script>
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- Material Dashboard javascript methods -->
+    <script src="js/material-dashboard.js"></script>
+    <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+    <script src="js/demo.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // Javascript method's body can be found in assets/js/demos.js
+            demo.initDashboardPageCharts();
+
+        });
+    </script>
+</body>
+</html>

@@ -20,7 +20,9 @@ namespace Models
         [MinLength(3, ErrorMessage = ErrMsg.MinLenghtMsg)]
         public string Text { get; set; }
         [ForeignKey(nameof(CourseID))]
+        [Display(Name = "دوره ")]
         public Course Course { get; set; }
+        [Display(Name = "کاربر ")]
         [ForeignKey(nameof(UserID))]
         public ApplicationUser User { get; set; }
     }

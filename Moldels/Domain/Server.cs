@@ -24,8 +24,8 @@ namespace Models
         [MaxLength(150, ErrorMessage = ErrMsg.MaxLenghtMsg)]
         [MinLength(3, ErrorMessage = ErrMsg.MinLenghtMsg)]
         public string Url { get; set; }
-        
 
+        [Display(Name = "عکس ")]
         public virtual ICollection<Image> Images { get; set; }
     }
 }

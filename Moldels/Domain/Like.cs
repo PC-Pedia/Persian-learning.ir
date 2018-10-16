@@ -14,8 +14,10 @@ namespace Models
         public int CourseID { get; set; }
 
         [ForeignKey(nameof(CourseID))]
+        [Display(Name = "دوره ")]
         public Course Course { get; set; }
         [ForeignKey(nameof(UserID))]
+        [Display(Name = "کاربر ")]
         public ApplicationUser User { get; set; }
     }
 }

@@ -32,3 +32,10 @@ E:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\Const.pdb
 E:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\Moldels.pdb
 E:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Identity.Stores.xml
 E:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.csproj.CopyComplete
+D:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\Const.dll
+D:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\Moldels.dll
+D:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Identity.Stores.dll
+D:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\Const.pdb
+D:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\Moldels.pdb
+D:\Persian_Learning\ViewModel\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Identity.Stores.xml
+D:\Persian_Learning\ViewModel\obj\Debug\netcoreapp2.1\ViewModel.csproj.CopyComplete

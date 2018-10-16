@@ -11,6 +11,7 @@ namespace Models
     {
         [Key]
         public int ID { get; set; }
+      
         public int CourseID { get; set; }
 
         [Display(Name = "عنوان")]
@@ -24,6 +25,7 @@ namespace Models
         public virtual ICollection<Heding> Heding { get; set; }
 
         [ForeignKey(nameof(CourseID))]
+        [Display(Name = "دوره ")]
         public virtual Course Course { get; set; }
     }
 

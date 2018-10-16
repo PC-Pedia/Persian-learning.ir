@@ -10,24 +10,29 @@ namespace Models
     {
         [Key]
         public int ID { get; set; }
+        [Display(Name = "دسته بندی")]
         public int CateID { get; set; }
+        [Display(Name = "دوره")]
         public int? CourseID { get; set; }
+        [Display(Name = "نوع دوره")]
         public int? CourseTypeID { get; set; }
+        [Display(Name = "وضعیت دوره")]
         public int? CourseStateID { get; set; }
+        [Display(Name = " استاد")]
         public int? ProfID { get; set; }
 
         [Display(Name = "عنوان فارسی")]
         [Required(AllowEmptyStrings = false, ErrorMessage = ErrMsg.RequierdMsg)]
         [MaxLength(255, ErrorMessage = ErrMsg.MaxLenghtMsg)]
         [MinLength(3, ErrorMessage = ErrMsg.MinLenghtMsg)]
-        [RegularExpression(@"[a-zا-یA-Z0-9آ\s_\-]*", ErrorMessage = ErrMsg.RegexMsg)]
+        
         public string TitleFa { get; set; }
 
         [Display(Name = "عنوان لاتین")]
         [Required(AllowEmptyStrings = false, ErrorMessage = ErrMsg.RequierdMsg)]
         [MaxLength(255, ErrorMessage = ErrMsg.MaxLenghtMsg)]
         [MinLength(3, ErrorMessage = ErrMsg.MinLenghtMsg)]
-        [RegularExpression(@"[a-zا-یA-Z0-9آ\s_\-]*", ErrorMessage = ErrMsg.RegexMsg)]
+       
         public string TitleEn { get; set; }
 
         [Display(Name = "معرفی اجمالی")]
@@ -61,25 +66,30 @@ namespace Models
         
 
         [ForeignKey(nameof(CateID))]
+        [Display(Name = "دسته بندی ")]
         public virtual Category Category { get; set; }
 
         [ForeignKey(nameof(CourseID))]
+        [Display(Name = "پیش نیاز ")]
         public virtual Course CourseBefore { get; set; }
 
         [ForeignKey(nameof(CourseTypeID))]
+        [Display(Name = "نوع دوره ")]
         public virtual CourseType CourseType { get; set; }
 
         [ForeignKey(nameof(CourseStateID))]
+        [Display(Name = "وضعیت دوره ")]
         public virtual CourseState CourseState { get; set; }
 
         [ForeignKey(nameof(ProfID))]
+        [Display(Name = "استاد ")]
         public virtual Professor professor { get; set; }
 
         public virtual ICollection<GroupShoping> GroupShopings { get; set; }
         public virtual ICollection<ShopingCart> ShopingCarts { get; set; }
         public virtual ICollection<Topic> Topics { get; set; }
 
-
+        public ICollection<Movie> Movies { get; set; }
 
         [NotMapped]
         public virtual ICollection<Like> Likes { get; set; }

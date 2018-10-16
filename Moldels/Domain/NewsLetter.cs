@@ -23,6 +23,7 @@ namespace Models
 
         
         [ForeignKey(nameof(UserID))]
+        [Display(Name = "کاربر ")]
         public virtual ApplicationUser User { get; set; }
     }
 }

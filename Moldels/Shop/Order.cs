@@ -30,11 +30,14 @@ namespace Models
         [Display(Name = "کد رهگیری پستی")]
         [MaxLength(50)]
         public string PostBarCode { get; set; }
+        [Display(Name = "تاریخ ")]
         public DateTime Date { get; set; }
+        [Display(Name = "توضیحات ")]
         public string Descreption { get; set; }
 
 
         [ForeignKey(nameof(UserID))]
+        [Display(Name = "کاربر ")]
         public virtual ApplicationUser User { get; set; }
 
         public virtual ICollection<GroupShoping> GroupShopings { get; set; }

@@ -48,14 +48,17 @@ namespace Models
     {
         [Key]
         public int ID { get; set; }
+     
         public int ProfID { get; set; }
         public int SkillID { get; set; }
 
 
         [ForeignKey(nameof(ProfID))]
+        [Display(Name = "استاد ")]
         public virtual Professor professor { get; set; }
 
         [ForeignKey(nameof(SkillID))]
+        [Display(Name = "مهارت ")]
         public virtual Skill Skill { get; set; }
 
     }

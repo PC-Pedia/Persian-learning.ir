@@ -99,14 +99,27 @@ namespace PesianLearning.Areas.Api.Controllers
 
         // POST: api/Categories
         [HttpPost]
-        public async Task<IActionResult> PostCategory([FromBody] Category category)
+        public async Task<IActionResult> PostCategory([FromBody] VmOption category)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            _context.Categories.Add(category);
+            _context.Categories.Add(new Category
+            {
+                ID = category.ID,
+                Title = category.Title,
+            });
+            await _context.SaveChangesAsync();
+            //string UserID = (User.Identity.IsAuthenticated ? User.Identity.Name : null);
+            _context.Images.Add(new Image
+            {
+                Alt = category.Title,
+                ServerID = _context.Servers.Where(m => m.Title == "دسته بندی ها").FirstOrDefault().ID,
+                FileName = category.Url,
+                CategoryID = category.ID
+            });
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetCategory", new { id = category.ID }, category);
@@ -122,12 +135,15 @@ namespace PesianLearning.Areas.Api.Controllers
             }
 
             var category = await _context.Categories.FindAsync(id);
+            var image =  _context.Images.Where(m=>m.CourseID == id).FirstOrDefault();
             if (category == null)
             {
                 return NotFound();
             }
 
             _context.Categories.Remove(category);
+            _context.Images.Remove(image);
+
             await _context.SaveChangesAsync();
 
             return Ok(category);

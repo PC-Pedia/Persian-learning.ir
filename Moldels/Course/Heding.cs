@@ -24,6 +24,7 @@ namespace Models
         public int Time { get; set; }
 
         [ForeignKey(nameof(TopicID))]
+        [Display(Name = "سرفصل ")]
         public virtual Topic Topic { get; set; }
     }
 }

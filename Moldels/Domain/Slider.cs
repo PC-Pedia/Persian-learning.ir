@@ -23,6 +23,7 @@ namespace Models
 
 
         [ForeignKey(nameof(CourseID))]
+        [Display(Name = "دوره ")]
         public virtual Course Course { get; set; }
 
     }

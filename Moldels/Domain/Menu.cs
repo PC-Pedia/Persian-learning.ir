@@ -15,6 +15,7 @@ namespace Models
         [MinLength(3, ErrorMessage = ErrMsg.MinLenghtMsg)]
         [RegularExpression(@"[a-zا-یA-Z0-9آ\s_\-]*", ErrorMessage = ErrMsg.RegexMsg)]
         public string Title { get; set; }
+        [Display(Name = "ترتیب ")]
         public int Sort { get; set; }
     }
 }

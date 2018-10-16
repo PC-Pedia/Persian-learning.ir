@@ -29,15 +29,19 @@ namespace Models
 
 
         [ForeignKey(nameof(ServerID))]
+        [Display(Name = "سرور ")]
         public virtual Server Server { get; set; }
 
         [ForeignKey(nameof(CourseID))]
+        [Display(Name = "دوره ")]
         public virtual Course Course { get; set; }
 
         [ForeignKey(nameof(CategoryID))]
+        [Display(Name = "دسته بندی ")]
         public virtual Category Category { get; set; }
 
         [ForeignKey(nameof(UserID))]
+        [Display(Name = "کاربر ")]
         public virtual ApplicationUser ApplicationUser { get; set; }
     }
 }

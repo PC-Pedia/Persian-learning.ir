@@ -19,9 +19,11 @@ namespace Models
 
 
         [ForeignKey(nameof(UserID))]
+        [Display(Name = "کاربر ")]
         public virtual ApplicationUser User{ get; set; }
 
         [ForeignKey(nameof(CourseID))]
+        [Display(Name = "دوره ")]
         public virtual Course Course { get; set; }
 
     }

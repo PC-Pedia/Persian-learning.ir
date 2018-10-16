@@ -716,23 +716,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Daemi\\.nuget\\packages\\": {},
+    "C:\\Users\\Mohamad Pc\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Persian_Learning\\ViewModel\\ViewModel.csproj",
+      "projectUniqueName": "D:\\Persian_Learning\\ViewModel\\ViewModel.csproj",
       "projectName": "ViewModel",
-      "projectPath": "E:\\Persian_Learning\\ViewModel\\ViewModel.csproj",
-      "packagesPath": "C:\\Users\\Daemi\\.nuget\\packages\\",
-      "outputPath": "E:\\Persian_Learning\\ViewModel\\obj\\",
+      "projectPath": "D:\\Persian_Learning\\ViewModel\\ViewModel.csproj",
+      "packagesPath": "C:\\Users\\Mohamad Pc\\.nuget\\packages\\",
+      "outputPath": "D:\\Persian_Learning\\ViewModel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Daemi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mohamad Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -745,11 +745,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\Persian_Learning\\Const\\Const.csproj": {
-              "projectPath": "E:\\Persian_Learning\\Const\\Const.csproj"
+            "D:\\Persian_Learning\\Const\\Const.csproj": {
+              "projectPath": "D:\\Persian_Learning\\Const\\Const.csproj"
             },
-            "E:\\Persian_Learning\\Moldels\\Moldels.csproj": {
-              "projectPath": "E:\\Persian_Learning\\Moldels\\Moldels.csproj"
+            "D:\\Persian_Learning\\Moldels\\Moldels.csproj": {
+              "projectPath": "D:\\Persian_Learning\\Moldels\\Moldels.csproj"
             }
           }
         }

@@ -31,9 +31,9 @@ namespace Models
         [MaxLength(50)]
         public string Ip { get; set; }
         public bool IsReplay { get; set; }
-
+        [Display(Name = "مدیر ")]
         public virtual ApplicationUser UserAdmin { get; set; }
-
+        [Display(Name = "کاربر ")]
         public virtual ApplicationUser UserClaint { get; set; }
     }
 }

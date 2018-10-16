@@ -106,7 +106,7 @@ using ViewModel;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(516, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d047d0d13805444d90bfe187569396f0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e808325e9c6449c1a8aaf6a82f4a4a52", async() => {
                 BeginContext(586, 6, true);
                 WriteLiteral("ویرایش");
                 EndContext();
@@ -142,7 +142,7 @@ using ViewModel;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(604, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "484c8f93ae734a049795a3e467016bc9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5bfd805f18884d789d3dbaf874a0e09a", async() => {
                 BeginContext(649, 6, true);
                 WriteLiteral("بازگشت");
                 EndContext();

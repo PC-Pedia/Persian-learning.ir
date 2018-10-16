@@ -358,3 +358,8 @@ E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\View
 E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\Views\Professors\Details.g.cshtml.cs
 E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\Views\Professors\Edit.g.cshtml.cs
 E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\Views\Professors\Index.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\Views\Sliders\Create.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\Views\Sliders\Delete.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\Views\Sliders\Details.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\Views\Sliders\Edit.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\Views\Sliders\Index.g.cshtml.cs

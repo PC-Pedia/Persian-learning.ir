@@ -8,8 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using Models;
 using PesianLearning.Data;
 
-namespace PesianLearning.Controllers
+namespace PesianLearning.Areas.Test.Controllers
 {
+    [Area("Test")]
     public class MenusController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -19,13 +20,13 @@ namespace PesianLearning.Controllers
             _context = context;
         }
 
-        // GET: Menus
+        // GET: Test/Menus
         public async Task<IActionResult> Index()
         {
             return View(await _context.Menus.ToListAsync());
         }
 
-        // GET: Menus/Details/5
+        // GET: Test/Menus/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -43,13 +44,13 @@ namespace PesianLearning.Controllers
             return View(menu);
         }
 
-        // GET: Menus/Create
+        // GET: Test/Menus/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Menus/Create
+        // POST: Test/Menus/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -65,7 +66,7 @@ namespace PesianLearning.Controllers
             return View(menu);
         }
 
-        // GET: Menus/Edit/5
+        // GET: Test/Menus/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -81,7 +82,7 @@ namespace PesianLearning.Controllers
             return View(menu);
         }
 
-        // POST: Menus/Edit/5
+        // POST: Test/Menus/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -116,7 +117,7 @@ namespace PesianLearning.Controllers
             return View(menu);
         }
 
-        // GET: Menus/Delete/5
+        // GET: Test/Menus/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -134,7 +135,7 @@ namespace PesianLearning.Controllers
             return View(menu);
         }
 
-        // POST: Menus/Delete/5
+        // POST: Test/Menus/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

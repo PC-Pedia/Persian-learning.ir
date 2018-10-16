@@ -10,6 +10,7 @@ namespace Models
     public class Professor
     {
         public int ID { get; set; }
+        public string UserID { get; set; }
 
         [Display(Name = "مدرک تحصیلی")]
         [Required(AllowEmptyStrings = false, ErrorMessage = ErrMsg.RequierdMsg)]
@@ -24,7 +25,9 @@ namespace Models
         public string TopSkill { get; set; }
 
         public virtual ICollection<ProfSkill> ProfSkills { get; set; }
-        public virtual Image Image { get; set; }
+
+        [ForeignKey(nameof(UserID))]
+        public ApplicationUser ApplicationUser { get; set; }
     }
     public class Skill
     {

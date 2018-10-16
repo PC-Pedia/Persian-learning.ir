@@ -14,19 +14,9 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ID" />
             <div class="form-group">
-                <label asp-for="UserID" class="control-label"></label>
-                <select asp-for="UserID" class="form-control" asp-items="ViewBag.UserID"></select>
-                <span asp-validation-for="UserID" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="CateID" class="control-label"></label>
                 <select asp-for="CateID" class="form-control" asp-items="ViewBag.CateID"></select>
                 <span asp-validation-for="CateID" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ProfessorID" class="control-label"></label>
-                <select asp-for="ProfessorID" class="form-control" asp-items="ViewBag.ProfessorID"></select>
-                <span asp-validation-for="ProfessorID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CourseID" class="control-label"></label>
@@ -42,6 +32,11 @@
                 <label asp-for="CourseStateID" class="control-label"></label>
                 <select asp-for="CourseStateID" class="form-control" asp-items="ViewBag.CourseStateID"></select>
                 <span asp-validation-for="CourseStateID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProfID" class="control-label"></label>
+                <select asp-for="ProfID" class="form-control" asp-items="ViewBag.ProfID"></select>
+                <span asp-validation-for="ProfID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="TitleFa" class="control-label"></label>
@@ -79,7 +74,7 @@
                 <span asp-validation-for="Visit" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="ذخیره" class="btn btn-success" />
+                <input type="submit" value="ثبت" class="btn btn-default" />
             </div>
         </form>
     </div>
@@ -89,6 +84,3 @@
     <a class="btn btn-danger" asp-action="Index">بازگشت</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

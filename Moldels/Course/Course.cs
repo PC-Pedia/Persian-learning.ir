@@ -10,12 +10,11 @@ namespace Models
     {
         [Key]
         public int ID { get; set; }
-        public string UserID { get; set; }
         public int CateID { get; set; }
-        public int ProfessorID { get; set; }
         public int? CourseID { get; set; }
-        public int CourseTypeID { get; set; }
-        public int CourseStateID { get; set; }
+        public int? CourseTypeID { get; set; }
+        public int? CourseStateID { get; set; }
+        public int? ProfID { get; set; }
 
         [Display(Name = "عنوان فارسی")]
         [Required(AllowEmptyStrings = false, ErrorMessage = ErrMsg.RequierdMsg)]
@@ -59,10 +58,7 @@ namespace Models
 
         public virtual ICollection<Price> Prices { get; set; }
         public virtual ICollection<Image> Images { get; set; }
-
-
-        [ForeignKey(nameof(UserID))]
-        public virtual ApplicationUser User { get; set; }
+        
 
         [ForeignKey(nameof(CateID))]
         public virtual Category Category { get; set; }
@@ -76,7 +72,7 @@ namespace Models
         [ForeignKey(nameof(CourseStateID))]
         public virtual CourseState CourseState { get; set; }
 
-        [ForeignKey(nameof(ProfessorID))]
+        [ForeignKey(nameof(ProfID))]
         public virtual Professor professor { get; set; }
 
         public virtual ICollection<GroupShoping> GroupShopings { get; set; }

@@ -10,7 +10,6 @@ namespace Models
 {
     public class ApplicationUser : IdentityUser
     {
-        public int? ImageID { get; set; }
 
         [Display(Name ="نام")]
         [Required]
@@ -38,8 +37,7 @@ namespace Models
         public string PostalCode { get; set; }
 
 
-
-        public virtual ICollection<Course> Courses { get; set; }
+        
         public virtual ICollection<NewsLetter> NewsLetter { get; set; }
         public virtual ICollection<ShopingCart> ShopingCart { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
@@ -53,8 +51,6 @@ namespace Models
         [NotMapped]
         public virtual ICollection<Comment> Comments { get; set; }
 
-
-        [ForeignKey(nameof(ImageID))]
         public virtual Image ImageProfile { get; set; }
 
     }

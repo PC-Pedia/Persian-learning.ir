@@ -23,7 +23,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // GET: Test/Sliders
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Sliders.Include(s => s.Course).Include(s => s.Professor);
+            var applicationDbContext = _context.Sliders.Include(s => s.Course);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -37,7 +37,6 @@ namespace PesianLearning.Areas.Test.Controllers
 
             var slider = await _context.Sliders
                 .Include(s => s.Course)
-                .Include(s => s.Professor)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (slider == null)
             {
@@ -51,7 +50,6 @@ namespace PesianLearning.Areas.Test.Controllers
         public IActionResult Create()
         {
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text");
-            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence");
             return View();
         }
 
@@ -60,7 +58,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,CourseID,ProfID,Sort,Link")] Slider slider)
+        public async Task<IActionResult> Create([Bind("ID,CourseID,Sort,Link")] Slider slider)
         {
             if (ModelState.IsValid)
             {
@@ -69,7 +67,6 @@ namespace PesianLearning.Areas.Test.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text", slider.CourseID);
-            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence", slider.ProfID);
             return View(slider);
         }
 
@@ -87,7 +84,6 @@ namespace PesianLearning.Areas.Test.Controllers
                 return NotFound();
             }
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text", slider.CourseID);
-            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence", slider.ProfID);
             return View(slider);
         }
 
@@ -96,7 +92,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,CourseID,ProfID,Sort,Link")] Slider slider)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,CourseID,Sort,Link")] Slider slider)
         {
             if (id != slider.ID)
             {
@@ -124,7 +120,6 @@ namespace PesianLearning.Areas.Test.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text", slider.CourseID);
-            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence", slider.ProfID);
             return View(slider);
         }
 
@@ -138,7 +133,6 @@ namespace PesianLearning.Areas.Test.Controllers
 
             var slider = await _context.Sliders
                 .Include(s => s.Course)
-                .Include(s => s.Professor)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (slider == null)
             {

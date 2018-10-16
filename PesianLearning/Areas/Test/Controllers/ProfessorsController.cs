@@ -23,7 +23,8 @@ namespace PesianLearning.Areas.Test.Controllers
         // GET: Test/Professors
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Professors.ToListAsync());
+            var applicationDbContext = _context.Professors.Include(p => p.ApplicationUser);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Test/Professors/Details/5
@@ -35,6 +36,7 @@ namespace PesianLearning.Areas.Test.Controllers
             }
 
             var professor = await _context.Professors
+                .Include(p => p.ApplicationUser)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (professor == null)
             {
@@ -47,6 +49,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // GET: Test/Professors/Create
         public IActionResult Create()
         {
+            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id");
             return View();
         }
 
@@ -55,7 +58,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Evidence,TopSkill")] Professor professor)
+        public async Task<IActionResult> Create([Bind("ID,UserID,Evidence,TopSkill")] Professor professor)
         {
             if (ModelState.IsValid)
             {
@@ -63,6 +66,7 @@ namespace PesianLearning.Areas.Test.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id", professor.UserID);
             return View(professor);
         }
 
@@ -79,6 +83,7 @@ namespace PesianLearning.Areas.Test.Controllers
             {
                 return NotFound();
             }
+            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id", professor.UserID);
             return View(professor);
         }
 
@@ -87,7 +92,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Evidence,TopSkill")] Professor professor)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,UserID,Evidence,TopSkill")] Professor professor)
         {
             if (id != professor.ID)
             {
@@ -114,6 +119,7 @@ namespace PesianLearning.Areas.Test.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id", professor.UserID);
             return View(professor);
         }
 
@@ -126,6 +132,7 @@ namespace PesianLearning.Areas.Test.Controllers
             }
 
             var professor = await _context.Professors
+                .Include(p => p.ApplicationUser)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (professor == null)
             {

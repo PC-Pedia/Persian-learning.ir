@@ -1,12 +1,11 @@
 ﻿@model Models.Menu
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Details";
 }
 
 
 
-<h3>آیا از حذف این مورد مطمئنید ؟</h3>
 <div>
     <h4>Menu</h4>
     <hr />
@@ -30,10 +29,8 @@
             @Html.DisplayFor(model => model.Sort)
         </dd>
     </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="ID" />
-        <input type="submit" value="حذف" class="btn btn-default" /> |
-        <a class="btn btn-danger" asp-action="Index">بازگشت</a>
-    </form>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">ویرایش</a> |
+    <a class="btn btn-danger" asp-action="Index">بازگشت</a>
 </div>

@@ -34,7 +34,7 @@ namespace PesianLearning.Data
 
 
             modelBuilder.Entity<Course>().HasIndex(m => m.CateID).HasName("Fk_Inx_Cat");
-            modelBuilder.Entity<Course>().HasIndex(m => m.UserID).HasName("Fk_Inx_User");
+            modelBuilder.Entity<Course>().HasIndex(m => m.ProfID).HasName("Fk_Inx_User");
             modelBuilder.Entity<Category>().HasIndex(a => a.Title).HasName("IX_Title");
             modelBuilder.Entity<CourseState>().HasIndex(a => a.Title).HasName("IX_Title");
             modelBuilder.Entity<CourseType>().HasIndex(a => a.Title).HasName("IX_Title");

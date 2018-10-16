@@ -23,7 +23,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // GET: Test/Courses
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Courses.Include(c => c.Category).Include(c => c.CourseBefore).Include(c => c.CourseState).Include(c => c.CourseType).Include(c => c.User).Include(c => c.professor);
+            var applicationDbContext = _context.Courses.Include(c => c.Category).Include(c => c.CourseBefore).Include(c => c.CourseState).Include(c => c.CourseType).Include(c => c.professor);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -40,7 +40,6 @@ namespace PesianLearning.Areas.Test.Controllers
                 .Include(c => c.CourseBefore)
                 .Include(c => c.CourseState)
                 .Include(c => c.CourseType)
-                .Include(c => c.User)
                 .Include(c => c.professor)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (course == null)
@@ -58,8 +57,7 @@ namespace PesianLearning.Areas.Test.Controllers
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text");
             ViewData["CourseStateID"] = new SelectList(_context.CourseStates, "ID", "Title");
             ViewData["CourseTypeID"] = new SelectList(_context.CourseTypes, "ID", "Title");
-            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id");
-            ViewData["ProfessorID"] = new SelectList(_context.Professors, "ID", "Evidence");
+            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence");
             return View();
         }
 
@@ -68,7 +66,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,UserID,CateID,ProfessorID,CourseID,CourseTypeID,CourseStateID,TitleFa,TitleEn,Text,StartDate,EndDate,Count,Visit")] Course course)
+        public async Task<IActionResult> Create([Bind("ID,CateID,CourseID,CourseTypeID,CourseStateID,ProfID,TitleFa,TitleEn,Text,StartDate,EndDate,Count,Visit")] Course course)
         {
             if (ModelState.IsValid)
             {
@@ -80,8 +78,7 @@ namespace PesianLearning.Areas.Test.Controllers
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text", course.CourseID);
             ViewData["CourseStateID"] = new SelectList(_context.CourseStates, "ID", "Title", course.CourseStateID);
             ViewData["CourseTypeID"] = new SelectList(_context.CourseTypes, "ID", "Title", course.CourseTypeID);
-            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id", course.UserID);
-            ViewData["ProfessorID"] = new SelectList(_context.Professors, "ID", "Evidence", course.ProfessorID);
+            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence", course.ProfID);
             return View(course);
         }
 
@@ -102,8 +99,7 @@ namespace PesianLearning.Areas.Test.Controllers
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text", course.CourseID);
             ViewData["CourseStateID"] = new SelectList(_context.CourseStates, "ID", "Title", course.CourseStateID);
             ViewData["CourseTypeID"] = new SelectList(_context.CourseTypes, "ID", "Title", course.CourseTypeID);
-            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id", course.UserID);
-            ViewData["ProfessorID"] = new SelectList(_context.Professors, "ID", "Evidence", course.ProfessorID);
+            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence", course.ProfID);
             return View(course);
         }
 
@@ -112,7 +108,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,UserID,CateID,ProfessorID,CourseID,CourseTypeID,CourseStateID,TitleFa,TitleEn,Text,StartDate,EndDate,Count,Visit")] Course course)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,CateID,CourseID,CourseTypeID,CourseStateID,ProfID,TitleFa,TitleEn,Text,StartDate,EndDate,Count,Visit")] Course course)
         {
             if (id != course.ID)
             {
@@ -143,8 +139,7 @@ namespace PesianLearning.Areas.Test.Controllers
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text", course.CourseID);
             ViewData["CourseStateID"] = new SelectList(_context.CourseStates, "ID", "Title", course.CourseStateID);
             ViewData["CourseTypeID"] = new SelectList(_context.CourseTypes, "ID", "Title", course.CourseTypeID);
-            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id", course.UserID);
-            ViewData["ProfessorID"] = new SelectList(_context.Professors, "ID", "Evidence", course.ProfessorID);
+            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence", course.ProfID);
             return View(course);
         }
 
@@ -161,7 +156,6 @@ namespace PesianLearning.Areas.Test.Controllers
                 .Include(c => c.CourseBefore)
                 .Include(c => c.CourseState)
                 .Include(c => c.CourseType)
-                .Include(c => c.User)
                 .Include(c => c.professor)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (course == null)

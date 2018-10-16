@@ -23,7 +23,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // GET: Test/Images
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Images.Include(i => i.Category).Include(i => i.Course).Include(i => i.Professor).Include(i => i.Server);
+            var applicationDbContext = _context.Images.Include(i => i.ApplicationUser).Include(i => i.Category).Include(i => i.Course).Include(i => i.Server);
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -36,9 +36,9 @@ namespace PesianLearning.Areas.Test.Controllers
             }
 
             var image = await _context.Images
+                .Include(i => i.ApplicationUser)
                 .Include(i => i.Category)
                 .Include(i => i.Course)
-                .Include(i => i.Professor)
                 .Include(i => i.Server)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (image == null)
@@ -52,9 +52,9 @@ namespace PesianLearning.Areas.Test.Controllers
         // GET: Test/Images/Create
         public IActionResult Create()
         {
+            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id");
             ViewData["CategoryID"] = new SelectList(_context.Categories, "ID", "Title");
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text");
-            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence");
             ViewData["ServerID"] = new SelectList(_context.Servers, "ID", "Title");
             return View();
         }
@@ -64,7 +64,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,ServerID,CourseID,CategoryID,ProfID,FileName,Alt")] Image image)
+        public async Task<IActionResult> Create([Bind("ID,ServerID,CourseID,CategoryID,UserID,FileName,Alt")] Image image)
         {
             if (ModelState.IsValid)
             {
@@ -72,9 +72,9 @@ namespace PesianLearning.Areas.Test.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id", image.UserID);
             ViewData["CategoryID"] = new SelectList(_context.Categories, "ID", "Title", image.CategoryID);
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text", image.CourseID);
-            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence", image.ProfID);
             ViewData["ServerID"] = new SelectList(_context.Servers, "ID", "Title", image.ServerID);
             return View(image);
         }
@@ -92,9 +92,9 @@ namespace PesianLearning.Areas.Test.Controllers
             {
                 return NotFound();
             }
+            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id", image.UserID);
             ViewData["CategoryID"] = new SelectList(_context.Categories, "ID", "Title", image.CategoryID);
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text", image.CourseID);
-            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence", image.ProfID);
             ViewData["ServerID"] = new SelectList(_context.Servers, "ID", "Title", image.ServerID);
             return View(image);
         }
@@ -104,7 +104,7 @@ namespace PesianLearning.Areas.Test.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,ServerID,CourseID,CategoryID,ProfID,FileName,Alt")] Image image)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,ServerID,CourseID,CategoryID,UserID,FileName,Alt")] Image image)
         {
             if (id != image.ID)
             {
@@ -131,9 +131,9 @@ namespace PesianLearning.Areas.Test.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["UserID"] = new SelectList(_context.ApplicationUsers, "Id", "Id", image.UserID);
             ViewData["CategoryID"] = new SelectList(_context.Categories, "ID", "Title", image.CategoryID);
             ViewData["CourseID"] = new SelectList(_context.Courses, "ID", "Text", image.CourseID);
-            ViewData["ProfID"] = new SelectList(_context.Professors, "ID", "Evidence", image.ProfID);
             ViewData["ServerID"] = new SelectList(_context.Servers, "ID", "Title", image.ServerID);
             return View(image);
         }
@@ -147,9 +147,9 @@ namespace PesianLearning.Areas.Test.Controllers
             }
 
             var image = await _context.Images
+                .Include(i => i.ApplicationUser)
                 .Include(i => i.Category)
                 .Include(i => i.Course)
-                .Include(i => i.Professor)
                 .Include(i => i.Server)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (image == null)

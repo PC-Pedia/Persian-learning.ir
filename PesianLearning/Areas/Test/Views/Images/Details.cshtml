@@ -41,14 +41,14 @@
             @Html.DisplayFor(model => model.Category.Title)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Professor)
+            @Html.DisplayNameFor(model => model.ApplicationUser)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Professor.Evidence)
+            @Html.DisplayFor(model => model.ApplicationUser.Id)
         </dd>
     </dl>
 </div>
 <div>
-    <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model.ID">ویرایش</a> |
+    <a asp-action="Edit" asp-route-id="@Model.ID">ویرایش</a> |
     <a class="btn btn-danger" asp-action="Index">بازگشت</a>
 </div>

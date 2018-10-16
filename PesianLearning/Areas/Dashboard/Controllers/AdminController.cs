@@ -11,7 +11,21 @@ namespace PesianLearning.Areas.Dashboard.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View(new ViewModel.VmListOption
+            {
+                CourseState = new List<ViewModel.VmOption>
+                {
+                    new ViewModel.VmOption{Title = "mohamad"},
+                    new ViewModel.VmOption{Title = "hasan"},
+                    new ViewModel.VmOption{Title = "taghi"},
+                },
+                CourseType = new List<ViewModel.VmOption>
+                {
+                    new ViewModel.VmOption{Title = "mohamad"},
+                    new ViewModel.VmOption{Title = "hasan"},
+                    new ViewModel.VmOption{Title = "taghi"},
+                }
+            });
         }
     }
 }

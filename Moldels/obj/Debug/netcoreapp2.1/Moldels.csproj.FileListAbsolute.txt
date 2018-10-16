@@ -26,3 +26,7 @@ D:\Persian_Learning\Moldels\obj\Debug\netcoreapp2.1\Moldels.AssemblyInfo.cs
 D:\Persian_Learning\Moldels\obj\Debug\netcoreapp2.1\Moldels.csproj.CopyComplete
 D:\Persian_Learning\Moldels\obj\Debug\netcoreapp2.1\Moldels.dll
 D:\Persian_Learning\Moldels\obj\Debug\netcoreapp2.1\Moldels.pdb
+E:\Persian_Learning\Moldels\bin\Debug\netcoreapp2.1\EntityFramework.dll
+E:\Persian_Learning\Moldels\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Persian_Learning\Moldels\bin\Debug\netcoreapp2.1\EntityFramework.xml
+E:\Persian_Learning\Moldels\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml

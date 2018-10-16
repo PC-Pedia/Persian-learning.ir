@@ -1,0 +1,99 @@
+﻿@model IEnumerable<VmOption>
+
+@{
+    Layout = null;
+}
+
+<style>
+    td, .btn {
+        padding: 4px !important;
+    }
+    .img-deactive {
+        background-image: url(../../../../wwwroot/dashboard/img/slider/1.jpg);
+        height: 40px !important;
+        width: 40px !important;
+        float: left !important;
+        background-repeat: no-repeat;
+    }
+
+</style>
+
+<div class="card">
+    <div class="card-header" data-background-color="red">
+        <h4 class="title">
+            رنگ
+            <i style="float:left" class="material-icons">palette</i>
+        </h4>
+        <p class="category">
+            تعداد :
+            @Model.Count()
+            <button id="show-create" class="btn btn-danger">جدید</button>
+            <div id="show-table" style="width: 73% !important;position: absolute;text-align: left;"
+                 class="img-deactive "></div>
+        </p>
+
+    </div>
+    <div id="table" class="card-content table-responsive slideup">
+        <table class="table" style="text-align:center !important">
+            <thead class="text-primary">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().Title)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </td>
+                        <td>
+                            <button type="button" rel="tooltip" title=""
+                                    class="btn btn-primary btn-simple btn-xs"
+                                    data-original-title="ویرایش"
+                                    onclick="location.href='@Url.Action("EditColor", "Option", new { id = item.ID })'">
+                                <i class="material-icons">edit</i>
+                                <div class="ripple-container"></div>
+                            </button>
+                            <button type="button" rel="tooltip" title=""
+                                    class="btn btn-primary btn-simple btn-xs delete-color"
+                                    data-original-title="حذف"
+                                    data-us=@item.ID>
+                                <i class="material-icons">delete</i>
+                                <div class="ripple-container"></div>
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div id="create" class="card-content table-responsive slideup">
+        @Html.ActionLink("جدید", "create", "option");
+    </div>
+</div>
+
+
+@section scripts{
+    <script>
+        $("#show-table").click(function () {
+            $(this).toggleClass('img-deactive img-active');
+            $("#table").toggleClass('slidedown slideup');
+        });
+        $("#show-create").click(function () {
+            $(this).toggleClass('btn-danger btn-warning');
+            $("#create").toggleClass('slidedown slideup');
+        });
+        $(".delete-color").click(function () {
+            var kid = ($(this).data("us"));
+            var parent = $(this).parents("tr");
+            $.post("/option/deletecolor", { id: kid }, function () {
+                parent.slideUp();
+                demo.showNotification('top', 'center', "حذف شد!");
+            })
+        })
+    </script>
+}

@@ -98,13 +98,11 @@ E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Bussines.dll
 E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Const.dll
 E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ExtentionMethod.dll
 E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Moldels.dll
-E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Repository.dll
 E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ViewModel.dll
 E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Bussines.pdb
 E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Const.pdb
 E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ExtentionMethod.pdb
 E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Moldels.pdb
-E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\Repository.pdb
 E:\Persian_Learning\PesianLearning\bin\Debug\netcoreapp2.1\ViewModel.pdb
 E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.TagHelpers.input.cache
 E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.TagHelpers.output.cache
@@ -161,7 +159,6 @@ E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.csproj
 E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Cart.g.cshtml.cs
 E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\Course.g.cshtml.cs
 E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Home\HtmlCourse.g.cshtml.cs
-E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Sheard\_SiteLayout.g.cshtml.cs
 E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\User\Login.g.cshtml.cs
 E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Dashboard\Views\Admin\Index.g.cshtml.cs
 E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Dashboard\Views\Shared\_Layout.g.cshtml.cs
@@ -252,3 +249,6 @@ D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.dll
 D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\PesianLearning.pdb
 D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_SiteLayout.g.cshtml.cs
 D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_SiteLayout.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Dashboard\Views\Shared\_Option.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Dashboard\Views\_ViewImports.g.cshtml.cs

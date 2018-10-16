@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Const\Const.csproj" />
+    <ProjectReference Include="..\Moldels\Moldels.csproj" />
+  </ItemGroup>
+
 </Project>

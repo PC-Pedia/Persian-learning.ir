@@ -1,38 +1,10 @@
-﻿<table id="table"
-       data-url="//issues.wenzhixin.net.cn/examples/bootstrap_table/data"
-       data-pagination="true"
-       data-side-pagination="server"
-       data-page-list="[5, 10, 20, 50, 100, 200]"
-       data-search="true"
-       data-height="300"
-       class="table">
-    <thead>
-        <tr>
-            <th data-field="state" data-checkbox="true"></th>
-            <th data-field="id" data-align="right" data-sortable="true">Item ID</th>
-            <th data-field="name" data-align="center" data-sortable="true">Item Name</th>
-            <th data-field="price" data-sortable="true">Item Price</th>
-        </tr>
-        <tr>
-            <td data-field="state" data-checkbox="true"></td>
-            <td data-field="id" data-align="right" data-sortable="true">Item ID</td>
-            <td data-field="name" data-align="center" data-sortable="true">Item Name</td>
-            <td data-field="price" data-sortable="true">Item Price</td>
-        </tr>
-    </thead>
-</table>
+﻿@model VmListOption
+<div class="row" dir="rtl">
+    <div class="col-md-3 col-sm-6 col-xs-12">
+        @await Html.PartialAsync("_Option",Model.CourseState)
+    </div>
+</div>
 
 @section scripts{
-    <script>
-        $(function () {
-            $('#table').bootstrapTable({
-                formatRecordsPerPage: function () {
-                    return ''
-                },
-                formatShowingRows: function () {
-                    return ''
-                }
-            })
-        });
-    </script>
+
 }

@@ -363,6 +363,27 @@ namespace PesianLearning.Data.Migrations
                     b.ToTable("groupShopings");
                 });
 
+            modelBuilder.Entity("Models.Heding", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Time");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(50);
+
+                    b.Property<int>("TopicID");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("TopicID");
+
+                    b.ToTable("Hedings");
+                });
+
             modelBuilder.Entity("Models.Image", b =>
                 {
                     b.Property<int>("ID")
@@ -374,12 +395,13 @@ namespace PesianLearning.Data.Migrations
 
                     b.Property<int?>("CategoryID");
 
-                    b.Property<int?>("CourseID")
-                        .IsRequired();
+                    b.Property<int?>("CourseID");
 
                     b.Property<string>("FileName")
                         .IsRequired()
                         .HasMaxLength(255);
+
+                    b.Property<int?>("ProfID");
 
                     b.Property<int>("ServerID");
 
@@ -390,6 +412,10 @@ namespace PesianLearning.Data.Migrations
                         .HasFilter("[CategoryID] IS NOT NULL");
 
                     b.HasIndex("CourseID");
+
+                    b.HasIndex("ProfID")
+                        .IsUnique()
+                        .HasFilter("[ProfID] IS NOT NULL");
 
                     b.HasIndex("ServerID");
 
@@ -469,27 +495,6 @@ namespace PesianLearning.Data.Migrations
                     b.HasIndex("UserClaintId");
 
                     b.ToTable("Messages");
-                });
-
-            modelBuilder.Entity("Models.MinorTopic", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("TimeTopic");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(50);
-
-                    b.Property<int>("TopicID");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("TopicID");
-
-                    b.ToTable("MinorTopic");
                 });
 
             modelBuilder.Entity("Models.NewsLetter", b =>
@@ -703,20 +708,24 @@ namespace PesianLearning.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("ImageID");
+                    b.Property<int>("CourseID");
+
+                    b.Property<int?>("ImageID");
 
                     b.Property<string>("Link")
                         .IsRequired();
 
-                    b.Property<int>("Sort");
+                    b.Property<int>("ProfID");
 
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(255);
+                    b.Property<int>("Sort");
 
                     b.HasKey("ID");
 
+                    b.HasIndex("CourseID");
+
                     b.HasIndex("ImageID");
+
+                    b.HasIndex("ProfID");
 
                     b.ToTable("Sliders");
                 });
@@ -848,6 +857,14 @@ namespace PesianLearning.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("Models.Heding", b =>
+                {
+                    b.HasOne("Models.Topic", "Topic")
+                        .WithMany("Heding")
+                        .HasForeignKey("TopicID")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("Models.Image", b =>
                 {
                     b.HasOne("Models.Category", "Category")
@@ -856,8 +873,11 @@ namespace PesianLearning.Data.Migrations
 
                     b.HasOne("Models.Course", "Course")
                         .WithMany("Images")
-                        .HasForeignKey("CourseID")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("CourseID");
+
+                    b.HasOne("Models.Professor", "Professor")
+                        .WithOne("Image")
+                        .HasForeignKey("Models.Image", "ProfID");
 
                     b.HasOne("Models.Server", "Server")
                         .WithMany("Images")
@@ -886,14 +906,6 @@ namespace PesianLearning.Data.Migrations
                     b.HasOne("Models.ApplicationUser", "UserClaint")
                         .WithMany()
                         .HasForeignKey("UserClaintId");
-                });
-
-            modelBuilder.Entity("Models.MinorTopic", b =>
-                {
-                    b.HasOne("Models.Topic", "Topic")
-                        .WithMany("MinorTopics")
-                        .HasForeignKey("TopicID")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Models.NewsLetter", b =>
@@ -945,9 +957,18 @@ namespace PesianLearning.Data.Migrations
 
             modelBuilder.Entity("Models.Slider", b =>
                 {
-                    b.HasOne("Models.Image", "Image")
+                    b.HasOne("Models.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Models.Image")
                         .WithMany("Slider")
-                        .HasForeignKey("ImageID")
+                        .HasForeignKey("ImageID");
+
+                    b.HasOne("Models.Professor", "Professor")
+                        .WithMany()
+                        .HasForeignKey("ProfID")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

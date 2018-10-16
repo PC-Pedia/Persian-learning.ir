@@ -29,8 +29,9 @@ namespace PesianLearning.Data
             modelBuilder.Entity<Course>()
                 .HasMany(m => m.Images)
                 .WithOne(i => i.Course)
-                .IsRequired(true)
+                .IsRequired(false)
                 .HasForeignKey(i => i.CourseID);
+
 
             modelBuilder.Entity<Course>().HasIndex(m => m.CateID).HasName("Fk_Inx_Cat");
             modelBuilder.Entity<Course>().HasIndex(m => m.UserID).HasName("Fk_Inx_User");
@@ -50,6 +51,7 @@ namespace PesianLearning.Data
         public DbSet<Skill> Skills { get; set; }
         public DbSet<ProfSkill> profSkills { get; set; }
         public DbSet<Topic> Topics { get; set; }
+        public DbSet<Heding> Hedings { get; set; }
         public DbSet<Image> Images { get; set; }
         public DbSet<Menu> Menus { get; set; }
         public DbSet<Messages> Messages { get; set; }

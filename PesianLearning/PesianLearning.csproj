@@ -15,7 +15,8 @@
     <Folder Include="Areas\Dashboard\Data\" />
     <Folder Include="Areas\Dashboard\Models\" />
     <Folder Include="Areas\Identity\Services\" />
-    <Folder Include="wwwroot\dashboard\" />
+    <Folder Include="Areas\Test\Data\" />
+    <Folder Include="Areas\Test\Models\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,11 +33,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bussines\Bussines.csproj" />
     <ProjectReference Include="..\Const\Const.csproj" />
     <ProjectReference Include="..\ExtentionMethod\ExtentionMethod.csproj" />
     <ProjectReference Include="..\Moldels\Moldels.csproj" />
     <ProjectReference Include="..\ViewModel\ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Areas\Dashboard\Views\Shared\_Option.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Dashboard\Views\_ViewImports.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Dashboard\Views\_ViewStart.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
   </ItemGroup>
 
 </Project>

@@ -16,14 +16,13 @@ namespace Models
         [Required(AllowEmptyStrings = false, ErrorMessage = ErrMsg.RequierdMsg)]
         [MaxLength(50, ErrorMessage = ErrMsg.MaxLenghtMsg)]
         [MinLength(3, ErrorMessage = ErrMsg.MinLenghtMsg)]
-        [RegularExpression(@"[a-zا-یA-Z0-9آ\s_]*", ErrorMessage = ErrMsg.RegexMsg)]
+        [RegularExpression(@"[.#a-zا-یA-Z0-9آ\s_]*", ErrorMessage = ErrMsg.RegexMsg)]
         public string Title { get; set; }
 
         [Display(Name = "ادرس")]
         [Required(AllowEmptyStrings = false, ErrorMessage = ErrMsg.RequierdMsg)]
         [MaxLength(150, ErrorMessage = ErrMsg.MaxLenghtMsg)]
         [MinLength(3, ErrorMessage = ErrMsg.MinLenghtMsg)]
-        [RegularExpression(@"[\w\._\:]*", ErrorMessage = ErrMsg.RegexMsg)]
         public string Url { get; set; }
         
 

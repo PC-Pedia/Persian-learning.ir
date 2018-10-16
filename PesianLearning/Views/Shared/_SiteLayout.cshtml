@@ -1,6 +1,7 @@
-﻿
+﻿@{
+    MenuRepository RepMenu = new MenuRepository();
+}
 <!DOCTYPE html>
-
 <html>
 <head>
     <title>@ViewBag.Title</title>
@@ -24,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="~/home/css/properties.css">
     <link rel="stylesheet" href="~/home/css/style.css">
     <style>
+        
         body {
             font-family: IRANSans;
             background: #fff
@@ -51,7 +53,6 @@
             border-radius: 30px;
         }
     </style>
-
     <script type="text/javascript">
         function searchToggle(obj, evt) {
             var container = $(obj).closest('.search-wrapper');
@@ -74,7 +75,6 @@
         }
 
     </script>
-
 
 </head>
 <body>
@@ -100,67 +100,61 @@
                             </div>
                             <div class="collapse navbar-collapse js-navbar-collapse">
                                 <ul class="nav navbar-nav">
+                                    @foreach (var item in RepMenu.GetMenu())
+                                    {
+                                        if (RepMenu.HasChildMenu(item.ID))
+                                        {
+                                            <li class="dropdown mega-dropdown">
+                                                <a asp-controller="home" class="dropdown-toggle" style="color:black;width:130px" data-toggle="dropdown">@item.Title</a>
+                                                <ul class="dropdown-menu mega-dropdown-menu row">
+                                                    <li class="col-sm-3">
+                                                        <ul>
+                                                            <br />
+                                                            <content>
+                                                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                                    <div class="carousel-inner" style="text-align:center">
+                                                                        <div class="item active">
+                                                                            <a href="#"><img src="~/home/img/Nav/c.jpg" class="img-responsive" alt="" title="c# tourial" id="imgClick"></a>
 
-                                    <li>
-                                        <a href="@Url.Action("Index","Home",null)" id="index" style="color:black;width:130px">صفحه اصلی</a>
-                                    </li>
-                                    <li>
-                                        <a id="corse" href="@Url.Action("Course","Home",null)" style="color:black;width:130px">دوره های ما</a>
-                                    </li>
-                                    <li class="dropdown mega-dropdown">
-
-                                        <a id="prog" href="#" class="dropdown-toggle" style="color:black;width:130px" data-toggle="dropdown">برنامه نویسی</a>
-                                        <ul class="dropdown-menu mega-dropdown-menu row">
-                                            <li class="col-sm-3">
-                                                <ul>
-                                                    <br />
-                                                    <content>
-
-                                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                                            <div class="carousel-inner" style="text-align:center">
-                                                                <div class="item active">
-                                                                    <a href="#"><img src="~/home/img/Nav/c.jpg" class="img-responsive" alt="" title="c# tourial" id="imgClick"></a>
-                                                                    <h4 style="text-align:center"><small>پک طلایی C#</small></h4>
-                                                                </div><!-- End Item -->
-
-                                                            </div><!-- End Carousel Inner -->
-                                                        </div>
-                                                    </content>
-                                                    <!-- /.carousel -->
-                                                </ul>
-                                            </li>
-                                            <li class="col-sm-3">
-                                                <ul>
-                                                    <li class="dropdown-header" style="text-align:right">
-                                                        <a href="#" style="color:darkblue!important;font-size:15px!important;text-align:right!important" class="menuA"> برنامه نویسی ویندوز</a>
-
+                                                                        </div><!-- End Item -->
+                                                                    </div><!-- End Carousel Inner -->
+                                                                </div>
+                                                            </content>
+                                                            <!-- /.carousel -->
+                                                        </ul>
                                                     </li>
-                                                    <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی سی شارپ</a></li>
-                                                    <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی  جاوا</a></li>
-                                                    <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی پایتون</a></li>
-                                                    <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی بیسیک</a></li>
-                                                    <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی سی پلاس پلاس</a></li>
-                                                    <li style="margin-bottom:7px" class="divider"></li>
+                                                    @foreach (var itemChild in RepMenu.GetMenu(item.ID))
+                                                    {
+                                                        <li class="col-sm-3">
+                                                            <ul>
+                                                                <li class="dropdown-header" style="text-align:right">
+                                                                    <a href="#" style="color:darkblue!important;font-size:15px!important;text-align:right!important" class="menuA"> @itemChild.Title</a>
+                                                                </li>
+                                                                <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی سی شارپ</a></li>
+                                                                <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی  جاوا</a></li>
+                                                                <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی پایتون</a></li>
+                                                                <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی بیسیک</a></li>
+                                                                <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی سی پلاس پلاس</a></li>
+                                                                <li style="margin-bottom:7px" class="divider"></li>
+                                                            </ul>
+                                                        </li>
+                                                    }
+
+
 
                                                 </ul>
                                             </li>
+                                        }
+                                        else
+                                        {
+                                            <li>
+                                                <a href="" style="color:black;width:130px">@item.Title</a>
+                                            </li>
+                                        }
 
-
-                                        </ul>
-
-                                    </li>
-
-
+                                    }
+    
                                     <li>
-                                        <a id="abot" href="@Url.Action("About","Home",null)" style="color:black;width:130px">درباره ما</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="@Url.Action("../User/Login","Home",null)" style="color:black;width:130px">ثبت نام/ورود</a>
-                                    </li>
-
-                                    <li>
-
                                         <form onsubmit="submitFn(this, event);">
                                             <div class="search-wrapper">
                                                 <div class="input-holder">
@@ -169,12 +163,8 @@
                                                 </div>
                                             </div>
                                         </form>
-
                                     </li>
                                 </ul>
-
-
-
                             </div>
                             <!-- /.nav-collapse -->
                         </nav>
@@ -226,6 +216,7 @@
                             </center>
                             <br />
                             <ul style="text-align:center;list-style-type:none">
+
                                 <li><a id="ali" href="@Url.Action("HtmlCourse","Home",null)">Html 5</a></li>
                                 <li><a id="ali" href="CssPage.cshtml">Css</a></li>
                                 <li><a id="ali" href="PhpPage.cshtml">Php</a></li>
@@ -234,7 +225,6 @@
                             </ul>
                         </div>
                     </div>
-
                     <div class="col-md-6 col-lg-3 col-sm-12 col-xs-12">
                         <div class="single-footer footer-list white xs-center xs-mb50">
                             <p style="text-align:center"> دسترسی سریع</p>
@@ -244,12 +234,12 @@
                             </center>
                             <br />
                             <ul style="text-align:center;list-style-type:none">
-                                <li><a id="ali" href="#">Html 5</a></li>
-                                <li><a id="ali" href="#">Css</a></li>
-                                <li><a id="ali" href="#">Php</a></li>
-                                <li><a id="ali" href="#">C#</a></li>
-                                <li><a id="ali" href="#">Network+</a></li>
-                                <li><a id="ali" href="#">Java</a></li>
+                                <li><a id="ali" href="@Url.Action("Index","Home",null)">صفحه اصلی</a></li>
+                                <li><a id="ali" href="@Url.Action("Course","Home",null)">دوره های ما</a></li>
+                                <li><a id="ali" href="@Url.Action("About","Home",null)">درباره ما</a></li>
+                                <li><a id="ali" href="@Url.Action("Contact","Home",null)">تماس با ما</a></li>
+                                <li><a id="ali" href="@Url.Action("Cart","Home",null)">سبد خرید</a></li>
+                               
                             </ul>
                         </div>
                     </div>
@@ -261,7 +251,6 @@
                         </center>
                         <br />
                         <form action="#" method="post" style="font-family:IRANSans;text-align:center">
-
                             <input type="text" class="form-control" style="text-align:center" name="email" placeholder="ایمیل" />
                             <br />
                             <textarea name="message" class="form-control" style="text-align:center" placeholder="پیام"></textarea>
@@ -269,7 +258,6 @@
                             <button class="form-control btn btn-primary" style="">ارسال</button>
                             <br />
                         </form>
-
                     </div>
                 </div>
             </div>

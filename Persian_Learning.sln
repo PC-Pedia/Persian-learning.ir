@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtentionMethod", "Extentio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PesianLearning", "PesianLearning\PesianLearning.csproj", "{AAF8BC4D-84AB-44F5-8F76-03A9B8D455B3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bussines", "Bussines\Bussines.csproj", "{40DA95F9-135E-47A5-B730-0FD163472A47}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moldels", "Moldels\Moldels.csproj", "{D0F296DD-4DF5-4AFE-B1BB-2AFAEEA947C9}"
 EndProject
 Global
@@ -37,10 +35,6 @@ Global
 		{AAF8BC4D-84AB-44F5-8F76-03A9B8D455B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAF8BC4D-84AB-44F5-8F76-03A9B8D455B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAF8BC4D-84AB-44F5-8F76-03A9B8D455B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40DA95F9-135E-47A5-B730-0FD163472A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40DA95F9-135E-47A5-B730-0FD163472A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40DA95F9-135E-47A5-B730-0FD163472A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40DA95F9-135E-47A5-B730-0FD163472A47}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D0F296DD-4DF5-4AFE-B1BB-2AFAEEA947C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D0F296DD-4DF5-4AFE-B1BB-2AFAEEA947C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0F296DD-4DF5-4AFE-B1BB-2AFAEEA947C9}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -12,15 +12,8 @@ namespace Models
     {
         [Key]
         public int ID { get; set; }
-
-        public int ImageID { get; set; }
-
-        [Display(Name = "عنوان")]
-        [Required(AllowEmptyStrings = false, ErrorMessage = ErrMsg.RequierdMsg)]
-        [MaxLength(255, ErrorMessage = ErrMsg.MaxLenghtMsg)]
-        [MinLength(3, ErrorMessage = ErrMsg.MinLenghtMsg)]
-        [RegularExpression(@"[a-zا-یA-Z0-9آ\s_\-]*", ErrorMessage = ErrMsg.RegexMsg)]
-        public string Title { get; set; }
+        public int CourseID { get; set; }
+        public int ProfID { get; set; }
 
         [Display(Name ="ترتیب")]
         public int Sort { get; set; }
@@ -30,7 +23,12 @@ namespace Models
         public string Link { get; set; }
 
 
-        [ForeignKey(nameof(ImageID))]
-        public virtual Image Image { get; set; }
+        [ForeignKey(nameof(ProfID))]
+        public virtual Professor Professor { get; set; }
+
+
+        [ForeignKey(nameof(CourseID))]
+        public virtual Course Course { get; set; }
+
     }
 }

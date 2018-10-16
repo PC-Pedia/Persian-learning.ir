@@ -1,0 +1,30 @@
+﻿@model Models.GroupShoping
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div>
+    <h4>GroupShoping</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Course)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Course.Text)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Order)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Order.ID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model.ID">ویرایش</a> |
+    <a class="btn btn-danger" asp-action="Index">بازگشت</a>
+</div>

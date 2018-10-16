@@ -1,0 +1,87 @@
+﻿@model Models.Settings
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+
+<h3>آیا از حذف این مورد مطمئنید ؟</h3>
+<div>
+    <h4>Settings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiteTitle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteDescreption)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiteDescreption)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SiteKeyWords)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SiteKeyWords)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FavoIcon)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FavoIcon)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Brand)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Brand)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BoonValue)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BoonValue)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ValidBoonPerDay)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ValidBoonPerDay)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CountCommentPerPage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CountCommentPerPage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CountAskPerPage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CountAskPerPage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OnlyShowConfirmedComment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OnlyShowConfirmedComment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tax)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tax)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="حذف" class="btn btn-default" /> |
+        <a class="btn btn-danger" asp-action="Index">بازگشت</a>
+    </form>
+</div>

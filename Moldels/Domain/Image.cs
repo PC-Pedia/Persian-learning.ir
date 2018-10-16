@@ -13,6 +13,7 @@ namespace Models
         public int ServerID { get; set; }
         public int? CourseID { get; set; }
         public int? CategoryID { get; set; }
+        public int? ProfID { get; set; }
 
 
         [Display(Name = "آدرس")]
@@ -25,7 +26,7 @@ namespace Models
         //[Required(AllowEmptyStrings = false, ErrorMessage = ErrMsg.RequierdMsg)]
         [MaxLength(100, ErrorMessage = ErrMsg.MaxLenghtMsg)]
         [MinLength(3, ErrorMessage = ErrMsg.MinLenghtMsg)]
-        //[RegularExpression(@"[a-zا-یA-Z0-9آ\s_]*", ErrorMessage = ErrMsg.RegexMsg)]
+        //[RegularExpression(@"[.#a-zا-یA-Z0-9آ\s_]*", ErrorMessage = ErrMsg.RegexMsg)]
         public string Alt { get; set; }
 
 
@@ -37,6 +38,9 @@ namespace Models
 
         [ForeignKey(nameof(CategoryID))]
         public virtual Category Category { get; set; }
+
+        [ForeignKey(nameof(ProfID))]
+        public virtual Professor Professor { get; set; }
 
         public virtual ICollection<Slider> Slider { get; set; }
     }

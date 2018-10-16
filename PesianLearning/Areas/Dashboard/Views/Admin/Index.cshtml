@@ -1,10 +1,28 @@
 ﻿@model VmListOption
 <div class="row" dir="rtl">
     <div class="col-md-3 col-sm-6 col-xs-12">
-        @await Html.PartialAsync("_Option",Model.CourseState)
+        @await Html.PartialAsync("_Option", Model.CourseState)
     </div>
 </div>
 
 @section scripts{
-
+    <script>
+        alert();
+        $("#show-table").click(function () {
+            $(this).toggleClass('img-deactive img-active');
+            $("#table").toggleClass('slidedown slideup');
+        });
+        $("#show-create").click(function () {
+            $(this).toggleClass('btn-danger btn-warning');
+            $("#create").toggleClass('slidedown slideup');
+        });
+        $(".delete").click(function () {
+            var kid = ($(this).data("us"));
+            var parent = $(this).parents("tr");
+            $.post("/option/deletecolor", { id: kid }, function () {
+                parent.slideUp();
+                demo.showNotification('top', 'center', "حذف شد!");
+            })
+        })
+    </script>
 }

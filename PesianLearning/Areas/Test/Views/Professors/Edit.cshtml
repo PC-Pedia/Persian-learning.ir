@@ -1,0 +1,36 @@
+﻿@model Models.Professor
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+
+<h4>Professor</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Evidence" class="control-label"></label>
+                <input asp-for="Evidence" class="form-control" />
+                <span asp-validation-for="Evidence" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TopSkill" class="control-label"></label>
+                <input asp-for="TopSkill" class="form-control" />
+                <span asp-validation-for="TopSkill" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ذخیره" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-danger" asp-action="Index">بازگشت</a>
+</div>
+

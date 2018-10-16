@@ -1,0 +1,86 @@
+﻿@model Models.Settings
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+
+<h4>Settings</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="SiteTitle" class="control-label"></label>
+                <input asp-for="SiteTitle" class="form-control" />
+                <span asp-validation-for="SiteTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SiteDescreption" class="control-label"></label>
+                <input asp-for="SiteDescreption" class="form-control" />
+                <span asp-validation-for="SiteDescreption" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SiteKeyWords" class="control-label"></label>
+                <input asp-for="SiteKeyWords" class="form-control" />
+                <span asp-validation-for="SiteKeyWords" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FavoIcon" class="control-label"></label>
+                <input asp-for="FavoIcon" class="form-control" />
+                <span asp-validation-for="FavoIcon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brand" class="control-label"></label>
+                <input asp-for="Brand" class="form-control" />
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BoonValue" class="control-label"></label>
+                <input asp-for="BoonValue" class="form-control" />
+                <span asp-validation-for="BoonValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValidBoonPerDay" class="control-label"></label>
+                <input asp-for="ValidBoonPerDay" class="form-control" />
+                <span asp-validation-for="ValidBoonPerDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CountCommentPerPage" class="control-label"></label>
+                <input asp-for="CountCommentPerPage" class="form-control" />
+                <span asp-validation-for="CountCommentPerPage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CountAskPerPage" class="control-label"></label>
+                <input asp-for="CountAskPerPage" class="form-control" />
+                <span asp-validation-for="CountAskPerPage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="OnlyShowConfirmedComment" /> @Html.DisplayNameFor(model => model.OnlyShowConfirmedComment)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tax" class="control-label"></label>
+                <input asp-for="Tax" class="form-control" />
+                <span asp-validation-for="Tax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ذخیره" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-danger" asp-action="Index">بازگشت</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

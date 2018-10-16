@@ -1,0 +1,54 @@
+﻿@model Models.Image
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<div>
+    <h4>Image</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FileName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FileName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Alt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Alt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Server)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Server.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Course)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Course.Text)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Category.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Professor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Professor.Evidence)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-success" asp-action="Edit" asp-route-id="@Model.ID">ویرایش</a> |
+    <a class="btn btn-danger" asp-action="Index">بازگشت</a>
+</div>

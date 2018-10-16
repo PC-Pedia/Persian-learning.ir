@@ -1,0 +1,95 @@
+﻿@model IEnumerable<Models.Settings>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<p>
+    <a class="btn btn-success" asp-action="Create">ثبت</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SiteTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SiteDescreption)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SiteKeyWords)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FavoIcon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BoonValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValidBoonPerDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CountCommentPerPage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CountAskPerPage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OnlyShowConfirmedComment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tax)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SiteTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SiteDescreption)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SiteKeyWords)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FavoIcon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BoonValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValidBoonPerDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CountCommentPerPage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CountAskPerPage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OnlyShowConfirmedComment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tax)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

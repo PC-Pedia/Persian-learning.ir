@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-rtl.min.css">
 
     <link href="~/dashboard/css/material-dashboard.css" rel="stylesheet" />
-    
+
     <link href="~/dashboard/css/demo.css" rel="stylesheet" />
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 </head>
 <body style="font-family:myFont">
     <div class="wrapper">
-        <div class="sidebar" style="height:135%"  data-image="../img/wallpapers.jpg">
+        <div class="sidebar" data-image="/dashboard/img/wallpapers.jpg">
             <!--
                 Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
@@ -46,13 +46,41 @@
 
             <div class="sidebar-wrapper">
                 <ul class="nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="material-icons">table</i>
+                            <p>جداول</p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-area="test" asp-action="index" asp-controller="Categories">دسته بندیها</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="courses">دوره ها</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="coursestates">وضعیت دوره</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="professors">اساتید</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="skiles">مهارت</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="profskills">مهارتهای اساتید</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="topics">مباحث</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="hedings">سرفصلها</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="groupshopings">پکیج خرید ها</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="shoppingcarts">سبد خرید</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="orders">فروش</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="images">تصاویر</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="Comments">نظرات</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="likes">لایک ها</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="messages">سوالات</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="newsletters">ایمیل ها</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="servers">سرورها</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="settings">تنظیمات</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="shoppingcarts">سبد خرید</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="sliders">اسلایدر</a></li>
+                        </ul>
+                    </li>
                     <li class="@(ViewBag.title == " index" ? "active" : "" )">
                         <a href="@Url.Action(" Index","Admin",null)">
                             <i class="material-icons">dashboard</i>
                             <p>پیشخوان</p>
                         </a>
                     </li>
-                    <li class="@(ViewBag.title == " user" ? "active" : "" )">
+                    @*<li class="@(ViewBag.title == " user" ? "active" : "" )">
                         <a href="@Url.Action(" User","Admin",null)">
                             <i class="material-icons">person</i>
                             <p>مدیریت کاربران</p>
@@ -87,13 +115,7 @@
                             <i class="material-icons">edit</i>
                             <p>ویرایش سایت</p>
                         </a>
-                    </li>
-                    <li class="hidden-md hidden-lg">
-                        <a href="@Url.Action(" index","editsite",null)">
-                            <i class="material-icons">edit</i>
-                            <p>ویرایش سایت</p>
-                        </a>
-                    </li>
+                    </li>*@
                 </ul>
             </div>
         </div>
@@ -147,7 +169,7 @@
                     </div>
                 </div>
             </nav>
-            <div class="content">
+            <div class="content" dir="rtl">
 
                 @RenderBody()
             </div>
@@ -169,7 +191,7 @@
 
     <script src="~/dashboard/js/demo.js"></script>
 
-    @RenderSection("scripts")
+    @RenderSection("scripts", required: false)
 
 </body>
 </html>

@@ -575,7 +575,7 @@ h2.title {
 .sidebar .sidebar-wrapper,
 .off-canvas-sidebar .sidebar-wrapper {
   position: relative;
-  height: calc(100vh - 30px);
+  height: calc(100vh - 265px);
   overflow: auto;
   width: 260px;
   z-index: 4;

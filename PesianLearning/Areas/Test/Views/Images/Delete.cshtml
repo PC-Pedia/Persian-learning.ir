@@ -1,0 +1,57 @@
+﻿@model Models.Image
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+
+<h3>آیا از حذف این مورد مطمئنید ؟</h3>
+<div>
+    <h4>Image</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FileName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FileName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Alt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Alt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Server)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Server.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Course)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Course.Text)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Category.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Professor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Professor.Evidence)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="حذف" class="btn btn-default" /> |
+        <a class="btn btn-danger" asp-action="Index">بازگشت</a>
+    </form>
+</div>

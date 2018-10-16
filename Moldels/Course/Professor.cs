@@ -24,6 +24,7 @@ namespace Models
         public string TopSkill { get; set; }
 
         public virtual ICollection<ProfSkill> ProfSkills { get; set; }
+        public virtual Image Image { get; set; }
     }
     public class Skill
     {
@@ -34,7 +35,7 @@ namespace Models
         [Required(AllowEmptyStrings = false, ErrorMessage = ErrMsg.RequierdMsg)]
         [MaxLength(50, ErrorMessage = ErrMsg.MaxLenghtMsg)]
         [MinLength(3, ErrorMessage = ErrMsg.MinLenghtMsg)]
-        [RegularExpression(@"[a-zا-یA-Z0-9آ\s_]*", ErrorMessage = ErrMsg.RegexMsg)]
+        [RegularExpression(@"[.#a-zا-یA-Z0-9آ\s_]*", ErrorMessage = ErrMsg.RegexMsg)]
         public string Title { get; set; }
 
 
@@ -42,6 +43,7 @@ namespace Models
     }
     public class ProfSkill
     {
+        [Key]
         public int ID { get; set; }
         public int ProfID { get; set; }
         public int SkillID { get; set; }

@@ -4616,16 +4616,6 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "Bussines/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "compile": {
-          "bin/placeholder/Bussines.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Bussines.dll": {}
-        }
-      },
       "Const/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -12266,11 +12256,6 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "Bussines/1.0.0": {
-      "type": "project",
-      "path": "../Bussines/Bussines.csproj",
-      "msbuildProject": "../Bussines/Bussines.csproj"
-    },
     "Const/1.0.0": {
       "type": "project",
       "path": "../Const/Const.csproj",
@@ -12294,7 +12279,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Bussines >= 1.0.0",
       "Const >= 1.0.0",
       "ExtentionMethod >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
@@ -12335,9 +12319,6 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\Persian_Learning\\Bussines\\Bussines.csproj": {
-              "projectPath": "E:\\Persian_Learning\\Bussines\\Bussines.csproj"
-            },
             "E:\\Persian_Learning\\Const\\Const.csproj": {
               "projectPath": "E:\\Persian_Learning\\Const\\Const.csproj"
             },

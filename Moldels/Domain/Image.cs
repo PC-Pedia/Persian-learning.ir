@@ -41,7 +41,5 @@ namespace Models
 
         [ForeignKey(nameof(ProfID))]
         public virtual Professor Professor { get; set; }
-
-        public virtual ICollection<Slider> Slider { get; set; }
     }
 }

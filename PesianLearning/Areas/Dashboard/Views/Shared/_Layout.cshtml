@@ -55,6 +55,7 @@
                             <li><a asp-area="test" asp-action="index" asp-controller="Categories">دسته بندیها</a></li>
                             <li><a asp-area="test" asp-action="index" asp-controller="courses">دوره ها</a></li>
                             <li><a asp-area="test" asp-action="index" asp-controller="coursestates">وضعیت دوره</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="coursetypes">نوع دوره</a></li>
                             <li><a asp-area="test" asp-action="index" asp-controller="professors">اساتید</a></li>
                             <li><a asp-area="test" asp-action="index" asp-controller="skills">مهارت</a></li>
                             <li><a asp-area="test" asp-action="index" asp-controller="profskills">مهارتهای اساتید</a></li>
@@ -72,50 +73,15 @@
                             <li><a asp-area="test" asp-action="index" asp-controller="settings">تنظیمات</a></li>
                             <li><a asp-area="test" asp-action="index" asp-controller="ShopingCarts">سبد خرید</a></li>
                             <li><a asp-area="test" asp-action="index" asp-controller="sliders">اسلایدر</a></li>
+                            <li><a asp-area="test" asp-action="index" asp-controller="menus">منو</a></li>
                         </ul>
                     </li>
-                    <li class="@(ViewBag.title == " index" ? "active" : "" )">
-                        <a href="@Url.Action(" Index","Admin",null)">
+                    <li class="">
+                        <a asp-area="dashboard" asp-action="index" asp-controller="admin">
                             <i class="material-icons">dashboard</i>
                             <p>پیشخوان</p>
                         </a>
                     </li>
-                    @*<li class="@(ViewBag.title == " user" ? "active" : "" )">
-                        <a href="@Url.Action(" User","Admin",null)">
-                            <i class="material-icons">person</i>
-                            <p>مدیریت کاربران</p>
-                        </a>
-                    </li>
-                    <li class="@(ViewBag.title == null ? " active" : "" )">
-                        <a href="@Url.Action(" index","option",null)">
-                            <i class="material-icons">build</i>
-                            <p>جزئیات مانتو</p>
-                        </a>
-                    </li>
-                    <li class="@(ViewBag.title == " manto" ? "active" : "" )">
-                        <a href="@Url.Action(" index","mantoes",null)">
-                            <i class="material-icons">shopping_cart</i>
-                            <p>مانتوها</p>
-                        </a>
-                    </li>
-                    <li class="@(ViewBag.title == " email" ? "active" : "" )">
-                        <a href="@Url.Action(" Email","Admin",null)">
-                            <i class="material-icons">email</i>
-                            <p>ایمیل ها</p>
-                        </a>
-                    </li>
-                    <li class="@(ViewBag.title == " comment" ? "active" : "" )">
-                        <a href="@Url.Action(" Comment","Admin",null)">
-                            <i class="material-icons">comment</i>
-                            <p>نظرات</p>
-                        </a>
-                    </li>
-                    <li class="@(ViewBag.title == " edit" ? "active" : "" )">
-                        <a href="@Url.Action(" index","editsite",null)">
-                            <i class="material-icons">edit</i>
-                            <p>ویرایش سایت</p>
-                        </a>
-                    </li>*@
                 </ul>
             </div>
         </div>

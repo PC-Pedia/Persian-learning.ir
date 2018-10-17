@@ -34,3 +34,6 @@ D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfoInputs.cache
 D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfo.cs
 D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.dll
 D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.pdb
+E:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.dll
+E:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.xml
+E:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csproj.CopyComplete

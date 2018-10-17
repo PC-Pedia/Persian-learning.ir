@@ -66,6 +66,7 @@ namespace PesianLearning.Data
         public DbSet<ShopingCart> ShopingCarts { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Like> Likes { get; set; }
+        public DbSet<Movie> Movies { get; set; }
 
     }
 }

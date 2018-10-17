@@ -89,7 +89,7 @@ namespace Models
         public virtual ICollection<ShopingCart> ShopingCarts { get; set; }
         public virtual ICollection<Topic> Topics { get; set; }
 
-        public ICollection<Movie> Movies { get; set; }
+        public virtual ICollection<Movie> Movies { get; set; }
 
         [NotMapped]
         public virtual ICollection<Like> Likes { get; set; }

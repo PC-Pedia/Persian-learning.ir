@@ -1,5 +1,6 @@
 ﻿@{
     MenuRepository RepMenu = new MenuRepository();
+    CatRepository RepCat = new CatRepository();
 }
 <!DOCTYPE html>
 <html>
@@ -24,8 +25,10 @@
     <link href="~/home/about/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="~/home/css/properties.css">
     <link rel="stylesheet" href="~/home/css/style.css">
+
     <style>
-        
+
+
         body {
             font-family: IRANSans;
             background: #fff
@@ -53,29 +56,6 @@
             border-radius: 30px;
         }
     </style>
-    <script type="text/javascript">
-        function searchToggle(obj, evt) {
-            var container = $(obj).closest('.search-wrapper');
-
-            if (!container.hasClass('active')) {
-                container.addClass('active');
-                evt.preventDefault();
-            }
-            else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
-                container.removeClass('active');
-                // clear input
-                container.find('.search-input').val('');
-                // clear and hide result container when we press close
-                container.find('.result-container').fadeOut(100, function () { $(this).empty(); });
-            }
-        }
-
-         function changeImage() {
-            @*document.getElementById("imgClick").src = '@Url.Content(db.EditImages.Where(m => m.Title == "bahar").FirstOrDefault().Url)';*@
-        }
-
-    </script>
-
 </head>
 <body>
     <!--START TOP AREA-->
@@ -102,58 +82,49 @@
                                 <ul class="nav navbar-nav">
                                     @foreach (var item in RepMenu.GetMenu())
                                     {
-                                        if (RepMenu.HasChildMenu(item.ID))
+                                        if (item.Title == "آموزش")
                                         {
                                             <li class="dropdown mega-dropdown">
                                                 <a asp-controller="home" class="dropdown-toggle" style="color:black;width:130px" data-toggle="dropdown">@item.Title</a>
                                                 <ul class="dropdown-menu mega-dropdown-menu row">
                                                     <li class="col-sm-3">
-                                                        <ul>
-                                                            <br />
-                                                            <content>
-                                                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                                                    <div class="carousel-inner" style="text-align:center">
-                                                                        <div class="item active">
-                                                                            <a href="#"><img src="~/home/img/Nav/c.jpg" class="img-responsive" alt="" title="c# tourial" id="imgClick"></a>
 
-                                                                        </div><!-- End Item -->
-                                                                    </div><!-- End Carousel Inner -->
+                                                        <br />
+                                                        <content>
+                                                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                                <div class="carousel-inner" style="text-align:center">
+                                                                    <div class="item active">
+                                                                        <a href="#"><img src="~/home/img/Body/mvc.png" class="img-responsive" alt="" title="c# tourial" id="imgClick"></a>
+                                                                    </div>
                                                                 </div>
-                                                            </content>
-                                                            <!-- /.carousel -->
+                                                            </div>
+                                                        </content>
+
+                                                    </li>
+                                                    <li class="col-sm-3">
+                                                        <ul>
+                                                            @foreach (var itemChild in RepCat.GetAll())
+                                                            {
+                                                                <li style="margin-bottom:7px"><a data-url="@itemChild.ImgUrl" href="Coming.cshtml" class="changeImage" style="font-size:11px">@itemChild.Title</a></li>
+
+                                                                <li style="margin-bottom:7px" class="divider"></li>
+
+
+                                                            }
                                                         </ul>
                                                     </li>
-                                                    @foreach (var itemChild in RepMenu.GetMenu(item.ID))
-                                                    {
-                                                        <li class="col-sm-3">
-                                                            <ul>
-                                                                <li class="dropdown-header" style="text-align:right">
-                                                                    <a href="#" style="color:darkblue!important;font-size:15px!important;text-align:right!important" class="menuA"> @itemChild.Title</a>
-                                                                </li>
-                                                                <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی سی شارپ</a></li>
-                                                                <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی  جاوا</a></li>
-                                                                <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی پایتون</a></li>
-                                                                <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی بیسیک</a></li>
-                                                                <li style="margin-bottom:7px"><a href="Coming.cshtml" onmousemove="changeImage()" style="font-size:11px">فیلم آموزشی سی پلاس پلاس</a></li>
-                                                                <li style="margin-bottom:7px" class="divider"></li>
-                                                            </ul>
-                                                        </li>
-                                                    }
-
-
-
                                                 </ul>
                                             </li>
                                         }
                                         else
                                         {
                                             <li>
-                                                <a href="" style="color:black;width:130px">@item.Title</a>
+                                                <a href="~/dashboard/admin" style="color:black;width:130px">@item.Title</a>
                                             </li>
                                         }
 
                                     }
-    
+
                                     <li>
                                         <form onsubmit="submitFn(this, event);">
                                             <div class="search-wrapper">
@@ -239,7 +210,7 @@
                                 <li><a id="ali" href="@Url.Action("About","Home",null)">درباره ما</a></li>
                                 <li><a id="ali" href="@Url.Action("Contact","Home",null)">تماس با ما</a></li>
                                 <li><a id="ali" href="@Url.Action("Cart","Home",null)">سبد خرید</a></li>
-                               
+
                             </ul>
                         </div>
                     </div>
@@ -304,5 +275,34 @@
     <!--===== ACTIVE JS=====-->
     <script src="~/home/js/main.js"></script>
     <script src="~/home/about/index.js"></script>
+
+    <script type="text/javascript">
+        function searchToggle(obj, evt) {
+            var container = $(obj).closest('.search-wrapper');
+
+            if (!container.hasClass('active')) {
+                container.addClass('active');
+                evt.preventDefault();
+            }
+            else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
+                container.removeClass('active');
+                // clear input
+                container.find('.search-input').val('');
+                // clear and hide result container when we press close
+                container.find('.result-container').fadeOut(100, function () { $(this).empty(); });
+            }
+        }
+        $(".changeImage").hover(function () {
+            var data = $(this).data("url");
+            $("#imgClick").fadeOut(300, function () {
+                changeImage(data);
+            });
+        });
+        function changeImage(url) {
+            $("#imgClick").fadeIn(300);
+            $("#imgClick").attr("src",url);
+        }
+    </script>
+
 </body>
 </html>

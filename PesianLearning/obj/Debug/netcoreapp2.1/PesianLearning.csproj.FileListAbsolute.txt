@@ -476,3 +476,4 @@ D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\View
 D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\Views\Topics\Index.g.cshtml.cs
 D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\Views\_ViewImports.g.cshtml.cs
 D:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Test\Views\_ViewStart.g.cshtml.cs
+E:\Persian_Learning\PesianLearning\obj\Debug\netcoreapp2.1\Razor\Areas\Dashboard\Views\Admin\_TopicList.g.cshtml.cs

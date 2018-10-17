@@ -23,7 +23,7 @@ img {
 }
 
 /* Next & previous buttons */
-.prev,
+/*.prev,
 .next {
     cursor: pointer;
     position: absolute;
@@ -37,7 +37,7 @@ img {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-}
+}*/
 
 /* Position the "next button" to the right */
 .next {
@@ -1634,9 +1634,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
   border-bottom-right-radius: 6px;
 }
 
-a {
-  color: #9c27b0;
+a:hover{
+    cursor:pointer;
 }
+
 a:hover, a:focus {
   color: #89229b;
   text-decoration: none;

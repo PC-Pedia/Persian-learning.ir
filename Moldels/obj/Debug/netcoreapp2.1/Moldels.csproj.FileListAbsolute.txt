@@ -34,3 +34,5 @@ D:\Persian_Learning\Moldels\bin\Debug\netcoreapp2.1\EntityFramework.dll
 D:\Persian_Learning\Moldels\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Persian_Learning\Moldels\bin\Debug\netcoreapp2.1\EntityFramework.xml
 D:\Persian_Learning\Moldels\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.xml
+E:\Persian_Learning\Moldels\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.dll
+E:\Persian_Learning\Moldels\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.xml

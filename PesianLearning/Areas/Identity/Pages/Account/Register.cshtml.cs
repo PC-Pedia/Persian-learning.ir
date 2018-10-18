@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Models;
+using PesianLearning.Data;
 
 namespace PesianLearning.Areas.Identity.Pages.Account
 {
@@ -40,18 +42,22 @@ namespace PesianLearning.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required(ErrorMessage =ErrMsg.RequierdMsg)]
+            [Required(ErrorMessage = ErrMsg.RequierdMsg)]
             [EmailAddress]
             [Display(Name = "ایمیل")]
             public string Email { get; set; }
 
-            [Required(ErrorMessage =ErrMsg.RequierdMsg)]
+            [Required(ErrorMessage = ErrMsg.RequierdMsg)]
+            [Display(Name = "نام")]
+            public string Name { get; set; }
+
+            [Required(ErrorMessage = ErrMsg.RequierdMsg)]
             [StringLength(100, ErrorMessage = ErrMsg.MaxLenghtMsg, MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "گذرواژه")]
             public string Password { get; set; }
 
-            [Required(ErrorMessage =ErrMsg.RequierdMsg)]
+            [Required(ErrorMessage = ErrMsg.RequierdMsg)]
             [DataType(DataType.Password)]
             [Display(Name = "تکرار کذرواژه")]
             [Compare("Password", ErrorMessage = "با گذرواژه مغایرات دارد")]
@@ -69,28 +75,23 @@ namespace PesianLearning.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
-                var result = await _userManager.CreateAsync(user, Input.Password);
-                if (result.Succeeded)
-                {
-                    _logger.LogInformation("User created a new account with password.");
+                ApplicationDbContext applicationDb = new ApplicationDbContext();
+                var result = await (applicationDb.ApplicationUsers.AddAsync(new ApplicationUser { Name = Input.Name, UserName = Input.Email, Email = Input.Email, PasswordHash = Input.Password.GetHashCode().ToString() }));
+                applicationDb.SaveChanges();
+                _logger.LogInformation("User created a new account with password.");
 
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
-                        pageHandler: null,
-                        values: new { userId = user.Id, code = code },
-                        protocol: Request.Scheme);
+                var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                var callbackUrl = Url.Page(
+                    "/Account/ConfirmEmail",
+                    pageHandler: null,
+                    values: new { userId = user.Id, code = code },
+                    protocol: Request.Scheme);
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
+                    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-                    await _signInManager.SignInAsync(user, isPersistent: false);
-                    return LocalRedirect(returnUrl);
-                }
-                foreach (var error in result.Errors)
-                {
-                    ModelState.AddModelError(string.Empty, error.Description);
-                }
+                //await _signInManager.SignInAsync(user, isPersistent: false);
+                return LocalRedirect(returnUrl);
             }
 
             // If we got this far, something failed, redisplay form

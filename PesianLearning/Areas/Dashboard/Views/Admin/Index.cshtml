@@ -5,21 +5,23 @@
             @await Html.PartialAsync("_Option", Model.CourseState)
         </div>
     </div>*@
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
-<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" />
-<style>
 
-    div.container {
-        max-width: 1200px
-    }
+@section Style{
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" />
+    <style>
 
-    ul.dtr-details {
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-    }
-</style>
+        div.container {
+            max-width: 1200px
+        }
 
+        ul.dtr-details {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+}
 
 <table id="example" class="table display compact nowrap" style="width:100%;background-color:white">
     <thead>
@@ -63,98 +65,98 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TitleFa)
-            </td>
-            <td>
-                @item.StartDate.Value.ToShamsi().ToString("yyyy-MM-dd")
-            </td>
-            <td>
-                @item.EndDate.Value.ToShamsi().ToString("yyyy-MM-dd")
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Count)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Visit)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CourseBefore.TitleFa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CourseType.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CourseState.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.professor.ApplicationUser.Name)
-            </td>
-            <td>
-                @if (item.Images.Count != 0)
-                {
-                    <img height="25" src="@(@item.Images.FirstOrDefault().Server.Url+@item.Images.FirstOrDefault().FileName)" alt="@item.Images.FirstOrDefault().Alt" />
-                }
-            </td>
-            <td>
-                <table class="table" style="width:100%;margin:0px;padding:0px;">
-                    <thead>
-                        <tr>
-                            <th>
-                                @Html.DisplayNameFor(model => item.Topics.FirstOrDefault().Title)
-                            </th>
-                            <th>
-                                <div class="row">
-                                    <span class="col-sm-4 right">سرفصل</span>
-                                    <span class="col-sm-4 left"></span>
-                                    <span class="col-sm-4 left">زمان</span>
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @if (item.Topics != null)
-                        {
-                            foreach (var topic in item.Topics.ToList())
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TitleFa)
+                </td>
+                <td>
+                    @item.StartDate.Value.ToShamsi().ToString("yyyy-MM-dd")
+                </td>
+                <td>
+                    @item.EndDate.Value.ToShamsi().ToString("yyyy-MM-dd")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Count)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Visit)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseBefore.TitleFa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseType.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseState.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.professor.ApplicationUser.Name)
+                </td>
+                <td>
+                    @if (item.Images.Count != 0)
+                    {
+                        <img height="25" src="@(@item.Images.FirstOrDefault().Server.Url+@item.Images.FirstOrDefault().FileName)" alt="@item.Images.FirstOrDefault().Alt" />
+                    }
+                </td>
+                <td>
+                    <table class="table" style="width:100%;margin:0px;padding:0px;">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => item.Topics.FirstOrDefault().Title)
+                                </th>
+                                <th>
+                                    <div class="row">
+                                        <span class="col-sm-4 right">سرفصل</span>
+                                        <span class="col-sm-4 left"></span>
+                                        <span class="col-sm-4 left">زمان</span>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (item.Topics != null)
                             {
-                                <tr>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => topic.Title)
-                                    </td>
-                                    <td>
-                                        <table class="table" style="width:100%;margin:0px;padding:0px">
-                                            <tbody>
-                                                @if (topic.Heding != null)
-                                                {
-                                                    foreach (var head in topic.Heding.ToList())
+                                foreach (var topic in item.Topics.ToList())
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => topic.Title)
+                                        </td>
+                                        <td>
+                                            <table class="table" style="width:100%;margin:0px;padding:0px">
+                                                <tbody>
+                                                    @if (topic.Heding != null)
                                                     {
-                                                        <tr>
-                                                            <td>
-                                                                @Html.DisplayFor(modelItem => head.Title)
-                                                            </td>
-                                                            <td>
-                                                                @Html.DisplayFor(modelItem => head.Time)
-                                                            </td>
-                                                        </tr>
+                                                        foreach (var head in topic.Heding.ToList())
+                                                        {
+                                                            <tr>
+                                                                <td>
+                                                                    @Html.DisplayFor(modelItem => head.Title)
+                                                                </td>
+                                                                <td>
+                                                                    @Html.DisplayFor(modelItem => head.Time)
+                                                                </td>
+                                                            </tr>
+                                                        }
                                                     }
-                                                }
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                }
                             }
-                        }
-                    </tbody>
-                </table>
-                @*<a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-            <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-            <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>*@
-            </td>
-        </tr>
+                        </tbody>
+                    </table>
+                    @*<a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>*@
+                </td>
+            </tr>
         }
     </tbody>
 </table>

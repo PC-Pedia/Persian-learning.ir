@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Persian_Learning\\Const\\Const.csproj",
+      "projectUniqueName": "C:\\Users\\Mohamad Pc\\Desktop\\Persian_Learning\\Const\\Const.csproj",
       "projectName": "Const",
-      "projectPath": "D:\\Persian_Learning\\Const\\Const.csproj",
+      "projectPath": "C:\\Users\\Mohamad Pc\\Desktop\\Persian_Learning\\Const\\Const.csproj",
       "packagesPath": "C:\\Users\\Mohamad Pc\\.nuget\\packages\\",
-      "outputPath": "D:\\Persian_Learning\\Const\\obj\\",
+      "outputPath": "C:\\Users\\Mohamad Pc\\Desktop\\Persian_Learning\\Const\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

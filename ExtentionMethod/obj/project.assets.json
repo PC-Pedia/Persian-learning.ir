@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Persian_Learning\\ExtentionMethod\\ExtentionMethod.csproj",
+      "projectUniqueName": "C:\\Users\\Mohamad Pc\\Desktop\\Persian_Learning\\ExtentionMethod\\ExtentionMethod.csproj",
       "projectName": "ExtentionMethod",
-      "projectPath": "D:\\Persian_Learning\\ExtentionMethod\\ExtentionMethod.csproj",
+      "projectPath": "C:\\Users\\Mohamad Pc\\Desktop\\Persian_Learning\\ExtentionMethod\\ExtentionMethod.csproj",
       "packagesPath": "C:\\Users\\Mohamad Pc\\.nuget\\packages\\",
-      "outputPath": "D:\\Persian_Learning\\ExtentionMethod\\obj\\",
+      "outputPath": "C:\\Users\\Mohamad Pc\\Desktop\\Persian_Learning\\ExtentionMethod\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -37,3 +37,18 @@ D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.pdb
 E:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.dll
 E:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.xml
 E:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csproj.CopyComplete
+D:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csproj.CopyComplete
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.deps.json
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.dll
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Const.pdb
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csprojAssemblyReference.cache
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csproj.CoreCompileInputs.cache
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfoInputs.cache
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.AssemblyInfo.cs
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.csproj.CopyComplete
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.dll
+C:\Users\Mohamad Pc\Desktop\Persian_Learning\Const\obj\Debug\netcoreapp2.1\Const.pdb

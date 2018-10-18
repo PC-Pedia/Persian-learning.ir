@@ -20,7 +20,7 @@ namespace PesianLearning.Data
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=185.55.224.206;initial catalog=finicomp_learning;user id=finicomp_mohamad.mk;password=12qw!@QW", null);
+            optionsBuilder.UseSqlServer("Data Source=185.55.224.206;initial catalog=finicomp_learningtest;user id=finicomp_mohamad.mk;password=12qw!@QW", null);
             //optionsBuilder.UseSqlServer("Server=DESKTOP-85M4BPV;DataBase=LearningDB;Trusted_Connection=True;", null);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

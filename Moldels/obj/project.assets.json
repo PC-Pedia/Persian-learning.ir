@@ -703,11 +703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Persian_Learning\\Moldels\\Moldels.csproj",
+      "projectUniqueName": "C:\\Users\\Mohamad Pc\\Desktop\\Persian_Learning\\Moldels\\Moldels.csproj",
       "projectName": "Moldels",
-      "projectPath": "D:\\Persian_Learning\\Moldels\\Moldels.csproj",
+      "projectPath": "C:\\Users\\Mohamad Pc\\Desktop\\Persian_Learning\\Moldels\\Moldels.csproj",
       "packagesPath": "C:\\Users\\Mohamad Pc\\.nuget\\packages\\",
-      "outputPath": "D:\\Persian_Learning\\Moldels\\obj\\",
+      "outputPath": "C:\\Users\\Mohamad Pc\\Desktop\\Persian_Learning\\Moldels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -726,8 +726,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Persian_Learning\\Const\\Const.csproj": {
-              "projectPath": "D:\\Persian_Learning\\Const\\Const.csproj"
+            "C:\\Users\\Mohamad Pc\\Desktop\\Persian_Learning\\Const\\Const.csproj": {
+              "projectPath": "C:\\Users\\Mohamad Pc\\Desktop\\Persian_Learning\\Const\\Const.csproj"
             }
           }
         }

@@ -26,7 +26,7 @@ namespace Repository
                     Title = Slider.Course.TitleFa,
                     Professor = Slider.Course.professor.ApplicationUser.Name,
                     Link = Slider.Link,
-                    //Number = Slider.Course.Movies.Count,
+                    Number = Slider.Course.Movies.Count,
                     ImgUrl = Slider.Course.professor.ApplicationUser.ImageProfile.Server.Url.TrimEnd('/') + "/" + Slider.Course.professor.ApplicationUser.ImageProfile.FileName,
                     Alt = Slider.Course.professor.ApplicationUser.ImageProfile.Alt
                 }

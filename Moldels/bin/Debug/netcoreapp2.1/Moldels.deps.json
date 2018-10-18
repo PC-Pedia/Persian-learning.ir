@@ -9,7 +9,6 @@
       "Moldels/1.0.0": {
         "dependencies": {
           "Const": "1.0.0",
-          "EntityFramework": "6.0.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.1.0",
           "Microsoft.Extensions.Identity.Stores": "2.1.1.0"
         },
@@ -18,16 +17,11 @@
         }
       },
       "Const/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Abstractions": "2.1.1.0"
+        },
         "runtime": {
           "Const.dll": {}
-        }
-      },
-      "EntityFramework/6.0.0.0": {
-        "runtime": {
-          "EntityFramework.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.2.61023.0"
-          }
         }
       },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/2.1.1.0": {
@@ -41,6 +35,14 @@
       "Microsoft.Extensions.Identity.Stores/2.1.1.0": {
         "runtime": {
           "Microsoft.Extensions.Identity.Stores.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.18157"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Abstractions.Reference/2.1.1.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Mvc.Abstractions.dll": {
             "assemblyVersion": "2.1.1.0",
             "fileVersion": "2.1.1.18157"
           }
@@ -59,17 +61,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "EntityFramework/6.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/2.1.1.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
     "Microsoft.Extensions.Identity.Stores/2.1.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Abstractions.Reference/2.1.1.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
